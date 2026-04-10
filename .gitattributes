@@ -1,8 +1,4 @@
-﻿*.html linguist-documentation
-*.js linguist-documentation
-*.css linguist-documentation
-*.svg linguist-documentation
+﻿* linguist-documentation
+*.html linguist-documentation
 *.tex linguist-documentation
-*.map linguist-documentation
-
-# Force re-scan
+*.js linguist-documentation
