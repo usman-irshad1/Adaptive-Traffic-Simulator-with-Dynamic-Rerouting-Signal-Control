@@ -8,7 +8,7 @@ An Intelligent Transportation System (ITS) simulation that models and optimizes 
 
 This project simulates real-world traffic conditions in major Pakistani cities such as Karachi, Lahore, Multan, and Peshawar, with the goal of reducing congestion and improving travel efficiency.
 
-FOR UML click this link https://usman-irshad1.github.io/Adaptive-Traffic-Simulator-Dynamic-Rerouting-Signal-Control-System/
+FOR UML click this link https://usman-irshad1.github.io/Adaptive-Traffic-Simulator-with-Dynamic-Rerouting-Signal-Control/
 
 **Objective**
 
