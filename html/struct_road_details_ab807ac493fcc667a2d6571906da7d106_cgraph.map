@@ -1,0 +1,7 @@
+<map id="RoadDetails::vehicleJoinsQueue" name="RoadDetails::vehicleJoinsQueue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,179,48"/>
+<area shape="rect" id="Node000002" href="$struct_road_details.html#a915b2e8bea1bbe71934faeedf53a06fb" title=" " alt="" coords="227,13,405,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,24,214,26,208,27,179,29"/>
+<area shape="rect" id="Node000003" href="$struct_road_details.html#a3d1c2ac79846045deac57b0b89341471" title=" " alt="" coords="453,13,608,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,24,440,27,435,27,405,29"/>
+</map>

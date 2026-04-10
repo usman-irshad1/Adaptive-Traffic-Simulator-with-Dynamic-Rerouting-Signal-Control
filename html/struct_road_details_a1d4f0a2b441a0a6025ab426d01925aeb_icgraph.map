@@ -1,0 +1,5 @@
+<map id="RoadDetails::Congestion" name="RoadDetails::Congestion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,5,374,32"/>
+<area shape="rect" id="Node000002" href="$struct_road_details.html#acf7c90492228693e42db723f1481615f" title=" " alt="" coords="5,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,19,159,21,159,16,194,19"/>
+</map>

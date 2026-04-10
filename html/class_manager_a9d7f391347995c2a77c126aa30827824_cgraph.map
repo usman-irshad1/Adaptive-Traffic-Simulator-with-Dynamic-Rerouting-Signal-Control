@@ -1,0 +1,5 @@
+<map id="Manager::ShortestPath" name="Manager::ShortestPath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,161,40"/>
+<area shape="rect" id="Node000002" href="$struct_road_details.html#afa8574d48d45a7bace5f79f51ce70a56" title=" " alt="" coords="209,5,381,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,24,196,26,190,27,161,29"/>
+</map>
