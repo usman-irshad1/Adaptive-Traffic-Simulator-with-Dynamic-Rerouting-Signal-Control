@@ -1,5 +1,0 @@
-<map id="RoadDetails::NonIdealtime" name="RoadDetails::NonIdealtime">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,184,32"/>
-<area shape="rect" id="Node000002" href="$struct_road_details.html#a3d1c2ac79846045deac57b0b89341471" title=" " alt="" coords="232,5,387,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,16,219,19,214,19,184,21"/>
-</map>

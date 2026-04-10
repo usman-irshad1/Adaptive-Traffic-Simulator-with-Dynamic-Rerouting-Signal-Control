@@ -1,0 +1,154 @@
+\doxysection{Traffic\+Signal Struct Reference}
+\hypertarget{struct_traffic_signal}{}\label{struct_traffic_signal}\index{TrafficSignal@{TrafficSignal}}
+
+
+{\ttfamily \+\#include $<$Header1.\+h$>$}
+
+
+
+Collaboration diagram for Traffic\+Signal:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{struct_traffic_signal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_traffic_signal_a735c742416dde5838201086ab2a54f8a}{Traffic\+Signal}} ()
+\item 
+void \doxymbox{\hyperlink{struct_traffic_signal_ad511fcb7c7ed0ef2c74ef721e7d333df}{Timer}} (bool state, float time)
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_a1d19589faa58d871cf785747a5987791}{starvation\+Cost}} () const
+\item 
+void \doxymbox{\hyperlink{struct_traffic_signal_a5ecb82ecbda1a80231855c76b74fd302}{turn\+Green}} (bool \&state)
+\item 
+void \doxymbox{\hyperlink{struct_traffic_signal_aed72c3f26460de980016fd5e54ad573f}{turn\+Red}} (bool \&state)
+\item 
+bool \doxymbox{\hyperlink{struct_traffic_signal_a03987971e60235922ee4cc0641ede6db}{can\+Switch}} (int current\+Queue, int max\+Other\+Queue) const
+\item 
+bool \doxymbox{\hyperlink{struct_traffic_signal_ad683db5ff22b610dc2b168f7503a3376}{must\+Switch}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{greentimer}}
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_a1dc55c501cf486403a583b87c4ea1490}{min\+Green\+Time}}
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_aea48c826489ba082acc9c0fca532f600}{queue\+Threshold}}
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_a1055896b4a71e89642e4b68ccba53b7f}{max\+Green\+Time}}
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{redtimer}}
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_a3fe7ac2f328c7f2e8480bec527fc65da}{pa}}
+\item 
+float \doxymbox{\hyperlink{struct_traffic_signal_a21cce737cb1c27978c18e8555b7bd4d0}{pb}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{struct_traffic_signal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_traffic_signal_a735c742416dde5838201086ab2a54f8a}\index{TrafficSignal@{TrafficSignal}!TrafficSignal@{TrafficSignal}}
+\index{TrafficSignal@{TrafficSignal}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{TrafficSignal()}{TrafficSignal()}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a735c742416dde5838201086ab2a54f8a} 
+Traffic\+Signal::\+\+Traffic\+Signal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{struct_traffic_signal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_traffic_signal_a03987971e60235922ee4cc0641ede6db}\index{TrafficSignal@{TrafficSignal}!canSwitch@{canSwitch}}
+\index{canSwitch@{canSwitch}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{canSwitch()}{canSwitch()}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a03987971e60235922ee4cc0641ede6db} 
+bool Traffic\+Signal::\+can\+Switch (\begin{DoxyParamCaption}\item[{int}]{current\+Queue}{, }\item[{int}]{max\+Other\+Queue}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_traffic_signal_ad683db5ff22b610dc2b168f7503a3376}\index{TrafficSignal@{TrafficSignal}!mustSwitch@{mustSwitch}}
+\index{mustSwitch@{mustSwitch}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{mustSwitch()}{mustSwitch()}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_ad683db5ff22b610dc2b168f7503a3376} 
+bool Traffic\+Signal::\+must\+Switch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_traffic_signal_a1d19589faa58d871cf785747a5987791}\index{TrafficSignal@{TrafficSignal}!starvationCost@{starvationCost}}
+\index{starvationCost@{starvationCost}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{starvationCost()}{starvationCost()}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a1d19589faa58d871cf785747a5987791} 
+float Traffic\+Signal::\+starvation\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_traffic_signal_ad511fcb7c7ed0ef2c74ef721e7d333df}\index{TrafficSignal@{TrafficSignal}!Timer@{Timer}}
+\index{Timer@{Timer}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_ad511fcb7c7ed0ef2c74ef721e7d333df} 
+void Traffic\+Signal::\+\+Timer (\begin{DoxyParamCaption}\item[{bool}]{state}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_traffic_signal_a5ecb82ecbda1a80231855c76b74fd302}\index{TrafficSignal@{TrafficSignal}!turnGreen@{turnGreen}}
+\index{turnGreen@{turnGreen}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{turnGreen()}{turnGreen()}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a5ecb82ecbda1a80231855c76b74fd302} 
+void Traffic\+Signal::\+turn\+Green (\begin{DoxyParamCaption}\item[{bool \&}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_traffic_signal_aed72c3f26460de980016fd5e54ad573f}\index{TrafficSignal@{TrafficSignal}!turnRed@{turnRed}}
+\index{turnRed@{turnRed}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{turnRed()}{turnRed()}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_aed72c3f26460de980016fd5e54ad573f} 
+void Traffic\+Signal::\+turn\+Red (\begin{DoxyParamCaption}\item[{bool \&}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_traffic_signal_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}\index{TrafficSignal@{TrafficSignal}!greentimer@{greentimer}}
+\index{greentimer@{greentimer}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{greentimer}{greentimer}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e} 
+float Traffic\+Signal::\+greentimer}
+
+\Hypertarget{struct_traffic_signal_a1055896b4a71e89642e4b68ccba53b7f}\index{TrafficSignal@{TrafficSignal}!maxGreenTime@{maxGreenTime}}
+\index{maxGreenTime@{maxGreenTime}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{maxGreenTime}{maxGreenTime}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a1055896b4a71e89642e4b68ccba53b7f} 
+float Traffic\+Signal::\+max\+Green\+Time}
+
+\Hypertarget{struct_traffic_signal_a1dc55c501cf486403a583b87c4ea1490}\index{TrafficSignal@{TrafficSignal}!minGreenTime@{minGreenTime}}
+\index{minGreenTime@{minGreenTime}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{minGreenTime}{minGreenTime}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a1dc55c501cf486403a583b87c4ea1490} 
+float Traffic\+Signal::\+min\+Green\+Time}
+
+\Hypertarget{struct_traffic_signal_a3fe7ac2f328c7f2e8480bec527fc65da}\index{TrafficSignal@{TrafficSignal}!pa@{pa}}
+\index{pa@{pa}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{pa}{pa}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a3fe7ac2f328c7f2e8480bec527fc65da} 
+float Traffic\+Signal::\+pa}
+
+\Hypertarget{struct_traffic_signal_a21cce737cb1c27978c18e8555b7bd4d0}\index{TrafficSignal@{TrafficSignal}!pb@{pb}}
+\index{pb@{pb}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{pb}{pb}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_a21cce737cb1c27978c18e8555b7bd4d0} 
+float Traffic\+Signal::\+pb}
+
+\Hypertarget{struct_traffic_signal_aea48c826489ba082acc9c0fca532f600}\index{TrafficSignal@{TrafficSignal}!queueThreshold@{queueThreshold}}
+\index{queueThreshold@{queueThreshold}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{queueThreshold}{queueThreshold}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_aea48c826489ba082acc9c0fca532f600} 
+float Traffic\+Signal::\+queue\+Threshold}
+
+\Hypertarget{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}\index{TrafficSignal@{TrafficSignal}!redtimer@{redtimer}}
+\index{redtimer@{redtimer}!TrafficSignal@{TrafficSignal}}
+\doxysubsubsection{\texorpdfstring{redtimer}{redtimer}}
+{\footnotesize\ttfamily \label{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402} 
+float Traffic\+Signal::\+redtimer}
+
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_header1_8h}{Header1.\+h}}\end{DoxyCompactItemize}

@@ -1,9 +1,0 @@
-<map id="Manager::checkBrokenPath" name="Manager::checkBrokenPath">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,188,32"/>
-<area shape="rect" id="Node000002" href="$struct_road_details.html#abd834d75bb646b28fcbc9f079dfe6448" title=" " alt="" coords="236,5,439,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,16,223,19,218,19,188,21"/>
-<area shape="rect" id="Node000003" href="$struct_road_details.html#a915b2e8bea1bbe71934faeedf53a06fb" title=" " alt="" coords="487,5,665,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="439,16,474,19,469,19,440,21"/>
-<area shape="rect" id="Node000004" href="$struct_road_details.html#a3d1c2ac79846045deac57b0b89341471" title=" " alt="" coords="713,5,869,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="666,16,701,19,695,19,666,21"/>
-</map>

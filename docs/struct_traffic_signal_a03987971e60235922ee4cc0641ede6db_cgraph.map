@@ -1,7 +1,0 @@
-<map id="TrafficSignal::canSwitch" name="TrafficSignal::canSwitch">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,168,57"/>
-<area shape="rect" id="Node000002" href="$struct_traffic_signal.html#ad683db5ff22b610dc2b168f7503a3376" title=" " alt="" coords="224,5,394,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,32,211,30,205,31,168,37"/>
-<area shape="rect" id="Node000003" href="$struct_traffic_signal.html#a1d19589faa58d871cf785747a5987791" title=" " alt="" coords="216,56,402,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,51,203,57,198,57,168,56"/>
-</map>
