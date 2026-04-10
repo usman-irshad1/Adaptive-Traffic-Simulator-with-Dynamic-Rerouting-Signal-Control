@@ -1,0 +1,9 @@
+<map id="Graph::minimumSpanningtree" name="Graph::minimumSpanningtree">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,199,83"/>
+<area shape="rect" id="Node000002" href="$class_graph.html#af9005733f70a565e943218b2dc9f383d" title=" " alt="" coords="264,5,363,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,53,251,33,246,35,162,58"/>
+<area shape="rect" id="Node000003" href="$class_graph.html#a2a14feeb76125065bb6595f74a539c2c" title=" " alt="" coords="247,56,380,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,67,234,69,228,70,199,72"/>
+<area shape="rect" id="Node000004" href="$class_graph.html#af26084da4c72766057335876c3ee50de" title=" " alt="" coords="250,107,376,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,81,242,102,237,103,161,86"/>
+</map>

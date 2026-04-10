@@ -1,0 +1,18 @@
+<map id="RoadDetails::vehicleExitsQueue" name="RoadDetails::vehicleExitsQueue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="679,73,852,116"/>
+<area shape="rect" id="Node000002" href="$class_manager.html#ae97e60d3e65539f3ec5fc92185cf7a6a" title=" " alt="" coords="449,5,631,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="683,68,582,35,583,30,688,68"/>
+<area shape="rect" id="Node000004" href="$class_manager.html#aef9be6b89ef65c0eadad234ef04e6109" title=" " alt="" coords="178,56,401,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="661,90,402,78,401,73,667,88"/>
+<area shape="rect" id="Node000005" href="$class_manager.html#aa096455f1fb6db1d64381ba40b1924b0" title=" " alt="" coords="225,107,354,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="661,101,355,119,354,114,666,99"/>
+<area shape="rect" id="Node000006" href="$class_manager.html#a9d7f391347995c2a77c126aa30827824" title=" " alt="" coords="462,157,618,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="688,121,583,159,582,154,683,122"/>
+<area shape="rect" id="Node000003" href="$class_manager.html#a0170cc23a3a67917aed9e6f708830fe9" title=" " alt="" coords="5,81,130,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,17,310,25,243,33,178,47,132,63,94,83,91,79,130,58,177,41,242,28,310,19,436,15"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="160,85,131,90,129,85,164,83"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="207,112,130,104,130,99,211,110"/>
+<area shape="rect" id="Node000007" href="$class_manager.html#ac9e977b3769ef82a56fa87d08092decc" title=" " alt="" coords="192,157,387,184"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="444,171,387,173,387,168,449,171"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="200,153,177,148,132,130,94,111,95,106,134,125,179,143,206,153"/>
+</map>

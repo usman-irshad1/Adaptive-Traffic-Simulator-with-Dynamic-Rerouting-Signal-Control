@@ -1,0 +1,7 @@
+<map id="Manager::addVehicle" name="Manager::addVehicle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="396,13,538,40"/>
+<area shape="rect" id="Node000002" href="$class_manager.html#a336a1e9218b0d04d5f555851d123b352" title=" " alt="" coords="178,5,348,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,27,349,29,349,24,383,27"/>
+<area shape="rect" id="Node000003" href="$class_manager.html#a0170cc23a3a67917aed9e6f708830fe9" title=" " alt="" coords="5,13,130,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="160,27,130,29,130,24,165,26"/>
+</map>

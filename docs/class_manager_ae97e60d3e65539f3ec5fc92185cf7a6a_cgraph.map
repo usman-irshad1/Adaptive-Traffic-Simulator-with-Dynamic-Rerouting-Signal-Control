@@ -1,0 +1,11 @@
+<map id="Manager::checkBrokenPath" name="Manager::checkBrokenPath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,188,69"/>
+<area shape="rect" id="Node000002" href="$struct_road_details.html#afa8574d48d45a7bace5f79f51ce70a56" title=" " alt="" coords="251,5,424,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,42,238,38,233,40,189,47"/>
+<area shape="rect" id="Node000003" href="$struct_road_details.html#abd834d75bb646b28fcbc9f079dfe6448" title=" " alt="" coords="236,72,439,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,64,223,71,218,71,188,70"/>
+<area shape="rect" id="Node000004" href="$struct_road_details.html#a915b2e8bea1bbe71934faeedf53a06fb" title=" " alt="" coords="487,72,665,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,83,474,85,469,85,440,88"/>
+<area shape="rect" id="Node000005" href="$struct_road_details.html#a3d1c2ac79846045deac57b0b89341471" title=" " alt="" coords="713,72,869,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="666,83,701,85,695,85,666,88"/>
+</map>

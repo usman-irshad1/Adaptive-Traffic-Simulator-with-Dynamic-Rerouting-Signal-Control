@@ -1,0 +1,22 @@
+<map id="Manager::arrivalAtIntersection" name="Manager::arrivalAtIntersection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,201,159"/>
+<area shape="rect" id="Node000002" href="$struct_road_details.html#a669dfcadc27d416b6511a92684442ef9" title=" " alt="" coords="251,5,458,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,130,175,90,248,48,285,36,281,39,250,53,178,94,123,134"/>
+<area shape="rect" id="Node000003" href="$struct_road_details.html#a915b2e8bea1bbe71934faeedf53a06fb" title=" " alt="" coords="508,132,686,159"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,129,186,108,248,92,307,83,354,80,401,83,461,92,510,105,557,125,551,125,508,110,459,97,401,88,354,85,308,88,249,97,188,113,136,134"/>
+<area shape="rect" id="Node000005" href="$class_manager.html#a9d7f391347995c2a77c126aa30827824" title=" " alt="" coords="277,275,432,301"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,157,173,208,210,236,250,260,267,270,261,269,247,265,207,241,169,212,116,162"/>
+<area shape="rect" id="Node000007" href="$struct_road_details.html#ad2d8b3a44383c9950e6cc4b4606b9f1a" title=" " alt="" coords="249,107,460,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="200,133,236,131,231,133,202,138"/>
+<area shape="rect" id="Node000008" href="$struct_road_details.html#abd834d75bb646b28fcbc9f079dfe6448" title=" " alt="" coords="253,157,456,184"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="201,153,240,158,235,160,202,158"/>
+<area shape="rect" id="Node000009" href="$struct_road_details.html#ab807ac493fcc667a2d6571906da7d106" title=" " alt="" coords="268,208,441,251"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="143,157,250,193,272,203,266,203,248,199,143,162"/>
+<area shape="rect" id="Node000004" href="$struct_road_details.html#a3d1c2ac79846045deac57b0b89341471" title=" " alt="" coords="734,132,890,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="686,143,722,145,716,146,687,148"/>
+<area shape="rect" id="Node000006" href="$struct_road_details.html#afa8574d48d45a7bace5f79f51ce70a56" title=" " alt="" coords="511,267,683,309"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="432,285,498,288,493,288,432,291"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="460,128,495,134,490,135,461,134"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="456,157,495,156,490,157,457,163"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="425,205,459,193,543,165,549,164,461,199,427,210"/>
+</map>

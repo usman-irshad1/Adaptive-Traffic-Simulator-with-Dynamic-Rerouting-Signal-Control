@@ -1,0 +1,14 @@
+<map id="Manager::reached" name="Manager::reached">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,131,83"/>
+<area shape="rect" id="Node000002" href="$class_manager.html#acc537b5360b5556da217c2a33775c373" title=" " alt="" coords="197,5,364,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,53,209,35,204,38,128,58"/>
+<area shape="rect" id="Node000003" href="$class_manager.html#a353440025ca159bb34b3af7063376db8" title=" " alt="" coords="443,56,595,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,67,428,67,427,72,131,72"/>
+<area shape="rect" id="Node000005" href="$struct_road_details.html#abd834d75bb646b28fcbc9f079dfe6448" title=" " alt="" coords="179,107,382,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="127,81,209,101,204,103,127,86"/>
+<area shape="rect" id="Node000004" href="$struct_road_details.html#a3d1c2ac79846045deac57b0b89341471" title=" " alt="" coords="656,81,812,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,76,644,84,638,84,596,81"/>
+<area shape="rect" id="Node000006" href="$struct_road_details.html#a915b2e8bea1bbe71934faeedf53a06fb" title=" " alt="" coords="430,107,608,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="382,117,417,120,412,120,383,123"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="608,107,638,106,644,105,609,112"/>
+</map>

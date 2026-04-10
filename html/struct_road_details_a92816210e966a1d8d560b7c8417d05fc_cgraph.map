@@ -1,0 +1,7 @@
+<map id="RoadDetails::operator&lt;" name="RoadDetails::operator&lt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,162,57"/>
+<area shape="rect" id="Node000002" href="$struct_road_details.html#a0da3fd2452fbaef2da1e7db355fc80ca" title=" " alt="" coords="210,5,403,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,33,197,31,192,32,162,38"/>
+<area shape="rect" id="Node000003" href="$struct_road_details.html#a0387742036ab698ca52d5b91225cca39" title=" " alt="" coords="220,56,393,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,50,206,57,201,58,162,56"/>
+</map>

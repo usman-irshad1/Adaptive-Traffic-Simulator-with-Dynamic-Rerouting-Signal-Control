@@ -1,0 +1,5 @@
+<map id="RoadDetails::RoadDetails" name="RoadDetails::RoadDetails">
+<area shape="rect" id="Node000001" title=" " alt="" coords="210,5,383,32"/>
+<area shape="rect" id="Node000002" href="$struct_road_details.html#a92816210e966a1d8d560b7c8417d05fc" title=" " alt="" coords="5,5,162,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,19,162,21,162,16,197,19"/>
+</map>
