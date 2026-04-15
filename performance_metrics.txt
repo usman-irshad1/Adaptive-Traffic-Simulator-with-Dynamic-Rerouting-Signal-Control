@@ -2,1111 +2,661 @@
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 100
-Total Vehicles Arrived: 205
-Cumulative Avg Travel Time: 7.34244 ticks
-Windowed Avg Travel Time (last 100): 8.956 ticks
+Total Vehicles Arrived: 208
+Cumulative Avg Travel Time: 7.38077 ticks
+Windowed Avg Travel Time (last 100): 9.013 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 9.9 ticks
+Max Travel Time: 10 ticks
 P95 Travel Time: 9.9 ticks
-System Throughput: 2.05 vehicles/tick
-Total Delay (actual - free_flow): 356.908 ticks
-Total System Cost: 30016.8
-Average Rush Level: 0.330159
-Active Vehicles: 3329
+System Throughput: 2.08 vehicles/tick
+Total Delay (actual - free_flow): 364.995 ticks
+Total System Cost: 39976
+Average Rush Level: 0.337593
+Active Vehicles: 4326
 Active Roads:
-  Karachi -> Lahore | Vehicles: 90/100 | Queue: 407 | Congestion: 90% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 121 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 475 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 0/65 | Queue: 402 | Congestion: 0% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 240 | Congestion: 100% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 502 | Congestion: 100% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 87/100 | Queue: 573 | Congestion: 87% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 204 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 641 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 487 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 39/40 | Queue: 646 | Congestion: 97% | Signal: RED
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 346 | Congestion: 100% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 14/15 | Queue: 0 | Congestion: 93% | Signal: RED
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 443 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 3/30 | Queue: 263 | Congestion: 10% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 68 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 75 | Congestion: 0% | Signal: RED
+  DG Khan -> Multan | Vehicles: 41/45 | Queue: 609 | Congestion: 91% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 12/30 | Queue: 337 | Congestion: 40% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 0/50 | Queue: 72 | Congestion: 0% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 77 | Congestion: 0% | Signal: RED
   Islamabad -> Lahore | Vehicles: 0/50 | Queue: 1 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 200
-Total Vehicles Arrived: 476
-Cumulative Avg Travel Time: 12.1758 ticks
-Windowed Avg Travel Time (last 100): 18.025 ticks
+Total Vehicles Arrived: 444
+Cumulative Avg Travel Time: 12.184 ticks
+Windowed Avg Travel Time (last 100): 19.087 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 19.9 ticks
-P95 Travel Time: 19.7 ticks
-System Throughput: 2.38 vehicles/tick
-Total Delay (actual - free_flow): 3007.31 ticks
-Total System Cost: 27838.7
-Average Rush Level: 0.334579
-Active Vehicles: 3105
+Max Travel Time: 20 ticks
+P95 Travel Time: 20 ticks
+System Throughput: 2.22 vehicles/tick
+Total Delay (actual - free_flow): 2839.83 ticks
+Total System Cost: 38445
+Average Rush Level: 0.332979
+Active Vehicles: 4137
 Active Roads:
-  Karachi -> Lahore | Vehicles: 98/100 | Queue: 254 | Congestion: 98% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 113 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 429 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 353 | Congestion: 4% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 447 | Congestion: 100% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 234 | Congestion: 100% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 373 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 220 | Congestion: 0% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 129 | Congestion: 0% | Signal: RED
+  Karachi -> Lahore | Vehicles: 49/100 | Queue: 469 | Congestion: 49% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 137 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 593 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 37/65 | Queue: 497 | Congestion: 56% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 309 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 622 | Congestion: 100% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 14/15 | Queue: 0 | Congestion: 93% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 558 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 279 | Congestion: 0% | Signal: RED
+  Multan -> Lahore | Vehicles: 0/50 | Queue: 155 | Congestion: 0% | Signal: RED
   Lahore -> Islamabad | Vehicles: 0/50 | Queue: 150 | Congestion: 0% | Signal: RED
   Lahore -> Multan | Vehicles: 0/50 | Queue: 60 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 17 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 11 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 300
-Total Vehicles Arrived: 811
-Cumulative Avg Travel Time: 17.9546 ticks
-Windowed Avg Travel Time (last 100): 29.2881 ticks
+Total Vehicles Arrived: 639
+Cumulative Avg Travel Time: 15.9722 ticks
+Windowed Avg Travel Time (last 100): 27.0891 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 29.9001 ticks
-P95 Travel Time: 29.9001 ticks
-System Throughput: 2.70333 vehicles/tick
-Total Delay (actual - free_flow): 9395.52 ticks
-Total System Cost: 24502.7
-Average Rush Level: 0.382912
-Active Vehicles: 2814
+Max Travel Time: 30.0001 ticks
+P95 Travel Time: 29.7001 ticks
+System Throughput: 2.13 vehicles/tick
+Total Delay (actual - free_flow): 6273.44 ticks
+Total System Cost: 38391.1
+Average Rush Level: 0.28254
+Active Vehicles: 3986
 Active Roads:
-  Karachi -> Lahore | Vehicles: 100/100 | Queue: 156 | Congestion: 100% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 77 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 332 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 29/65 | Queue: 290 | Congestion: 44% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 39/40 | Queue: 398 | Congestion: 97% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 198 | Congestion: 100% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 356 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 188 | Congestion: 0% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 169 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 31/50 | Queue: 198 | Congestion: 62% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 0/100 | Queue: 478 | Congestion: 0% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 143 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 497 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 499 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 291 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 554 | Congestion: 100% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 14/15 | Queue: 0 | Congestion: 93% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 577 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 282 | Congestion: 0% | Signal: RED
+  Multan -> Lahore | Vehicles: 0/50 | Queue: 180 | Congestion: 0% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 256 | Congestion: 0% | Signal: RED
   Lahore -> Multan | Vehicles: 0/50 | Queue: 60 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 23 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 18 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 400
-Total Vehicles Arrived: 1095
-Cumulative Avg Travel Time: 22.2992 ticks
-Windowed Avg Travel Time (last 100): 37.542 ticks
+Total Vehicles Arrived: 773
+Cumulative Avg Travel Time: 19.5695 ticks
+Windowed Avg Travel Time (last 100): 38.131 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 39.8 ticks
-P95 Travel Time: 39.5 ticks
-System Throughput: 2.7375 vehicles/tick
-Total Delay (actual - free_flow): 16913.9 ticks
-Total System Cost: 22909.3
-Average Rush Level: 0.353571
-Active Vehicles: 2557
+Max Travel Time: 40 ticks
+P95 Travel Time: 40 ticks
+System Throughput: 1.9325 vehicles/tick
+Total Delay (actual - free_flow): 10252.7 ticks
+Total System Cost: 35932.4
+Average Rush Level: 0.368889
+Active Vehicles: 3879
 Active Roads:
-  Karachi -> Lahore | Vehicles: 0/100 | Queue: 180 | Congestion: 0% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 0 | Congestion: 100% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 269 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 65/65 | Queue: 294 | Congestion: 100% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 33/40 | Queue: 354 | Congestion: 82% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 173 | Congestion: 100% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 27/45 | Queue: 345 | Congestion: 60% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 190 | Congestion: 0% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 207 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 166 | Congestion: 100% | Signal: RED
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 81 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 27 | Congestion: 0% | Signal: RED
+  Karachi -> Lahore | Vehicles: 100/100 | Queue: 383 | Congestion: 100% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 147 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 428 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 506 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 261 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 508 | Congestion: 100% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 14/15 | Queue: 0 | Congestion: 93% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 571 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 1/30 | Queue: 254 | Congestion: 3% | Signal: RED
+  Multan -> Lahore | Vehicles: 0/50 | Queue: 205 | Congestion: 0% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 39/50 | Queue: 241 | Congestion: 78% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 60 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 24 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 500
-Total Vehicles Arrived: 1398
-Cumulative Avg Travel Time: 27.1863 ticks
-Windowed Avg Travel Time (last 100): 47.9088 ticks
+Total Vehicles Arrived: 1059
+Cumulative Avg Travel Time: 26.255 ticks
+Windowed Avg Travel Time (last 100): 48.0928 ticks
 Min Travel Time: 1.9 ticks
 Max Travel Time: 49.8998 ticks
-P95 Travel Time: 49.6998 ticks
-System Throughput: 2.796 vehicles/tick
-Total Delay (actual - free_flow): 28344.5 ticks
-Total System Cost: 20101.9
-Average Rush Level: 0.367196
-Active Vehicles: 2266
+P95 Travel Time: 49.5998 ticks
+System Throughput: 2.118 vehicles/tick
+Total Delay (actual - free_flow): 20412.4 ticks
+Total System Cost: 33295.1
+Average Rush Level: 0.377778
+Active Vehicles: 3605
 Active Roads:
-  Karachi -> Lahore | Vehicles: 0/100 | Queue: 180 | Congestion: 0% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 207 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 65/65 | Queue: 230 | Congestion: 100% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 145 | Congestion: 100% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 295 | Congestion: 100% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 29/45 | Queue: 304 | Congestion: 64% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 2/30 | Queue: 160 | Congestion: 6% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 184 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 149 | Congestion: 100% | Signal: RED
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 102 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 49 | Congestion: 0% | Signal: RED
+  Karachi -> Lahore | Vehicles: 100/100 | Queue: 283 | Congestion: 100% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 147 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 366 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 507 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 229 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 462 | Congestion: 100% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 14/15 | Queue: 0 | Congestion: 93% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 556 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 224 | Congestion: 100% | Signal: RED
+  Multan -> Lahore | Vehicles: 0/50 | Queue: 226 | Congestion: 0% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 225 | Congestion: 0% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 60 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 39 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 600
-Total Vehicles Arrived: 1799
-Cumulative Avg Travel Time: 33.4629 ticks
-Windowed Avg Travel Time (last 100): 59.4007 ticks
+Total Vehicles Arrived: 1352
+Cumulative Avg Travel Time: 32.4842 ticks
+Windowed Avg Travel Time (last 100): 58.2877 ticks
 Min Travel Time: 1.9 ticks
 Max Travel Time: 59.8997 ticks
-P95 Travel Time: 59.8997 ticks
-System Throughput: 2.99833 vehicles/tick
-Total Delay (actual - free_flow): 47614.3 ticks
-Total System Cost: 16379.7
-Average Rush Level: 0.351429
-Active Vehicles: 1877
+P95 Travel Time: 59.2997 ticks
+System Throughput: 2.25333 vehicles/tick
+Total Delay (actual - free_flow): 34215 ticks
+Total System Cost: 30662.3
+Average Rush Level: 0.365873
+Active Vehicles: 3324
 Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 65 | Congestion: 30% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 19 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 60/60 | Queue: 127 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 0/65 | Queue: 231 | Congestion: 0% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 238 | Congestion: 100% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 121 | Congestion: 100% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 241 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 130 | Congestion: 0% | Signal: RED
-  Multan -> Lahore | Vehicles: 50/50 | Queue: 117 | Congestion: 100% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 4/50 | Queue: 176 | Congestion: 8% | Signal: RED
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 102 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 66 | Congestion: 0% | Signal: RED
+  Karachi -> Lahore | Vehicles: 100/100 | Queue: 187 | Congestion: 100% | Signal: GREEN
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 147 | Congestion: 100% | Signal: RED
+  Sukkur -> Lahore | Vehicles: 41/60 | Queue: 291 | Congestion: 68% | Signal: RED
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 508 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 204 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 403 | Congestion: 100% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 543 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 194 | Congestion: 100% | Signal: RED
+  Multan -> Lahore | Vehicles: 0/50 | Queue: 244 | Congestion: 0% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 224 | Congestion: 0% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 60 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 56 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 700
-Total Vehicles Arrived: 2230
-Cumulative Avg Travel Time: 39.6255 ticks
-Windowed Avg Travel Time (last 100): 69.3055 ticks
+Total Vehicles Arrived: 1608
+Cumulative Avg Travel Time: 37.7813 ticks
+Windowed Avg Travel Time (last 100): 68.5755 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 69.8995 ticks
+Max Travel Time: 69.9995 ticks
 P95 Travel Time: 69.8995 ticks
-System Throughput: 3.18571 vehicles/tick
-Total Delay (actual - free_flow): 72502.2 ticks
-Total System Cost: 12482
-Average Rush Level: 0.376484
-Active Vehicles: 1475
+System Throughput: 2.29714 vehicles/tick
+Total Delay (actual - free_flow): 49150.6 ticks
+Total System Cost: 27384
+Average Rush Level: 0.467228
+Active Vehicles: 3097
 Active Roads:
-  Karachi -> Lahore | Vehicles: 0/100 | Queue: 70 | Congestion: 0% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 20 | Congestion: 100% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 36/60 | Queue: 84 | Congestion: 60% | Signal: RED
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 167 | Congestion: 4% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 192 | Congestion: 100% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 99 | Congestion: 100% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 79/100 | Queue: 176 | Congestion: 79% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 85 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 29/60 | Queue: 240 | Congestion: 48% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 35/65 | Queue: 444 | Congestion: 53% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 355 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 179 | Congestion: 100% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 196 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 102 | Congestion: 100% | Signal: RED
-  Multan -> Lahore | Vehicles: 50/50 | Queue: 46 | Congestion: 100% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 128 | Congestion: 0% | Signal: RED
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 102 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 13/50 | Queue: 37 | Congestion: 26% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 524 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 166 | Congestion: 100% | Signal: RED
+  Multan -> Lahore | Vehicles: 50/50 | Queue: 217 | Congestion: 100% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 209 | Congestion: 100% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 60 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 77 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 800
-Total Vehicles Arrived: 2580
-Cumulative Avg Travel Time: 44.417 ticks
-Windowed Avg Travel Time (last 100): 78.6464 ticks
+Total Vehicles Arrived: 1969
+Cumulative Avg Travel Time: 44.2802 ticks
+Windowed Avg Travel Time (last 100): 76.8024 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 79.8994 ticks
-P95 Travel Time: 79.8994 ticks
-System Throughput: 3.225 vehicles/tick
-Total Delay (actual - free_flow): 96218.9 ticks
-Total System Cost: 8100.79
-Average Rush Level: 0.450397
-Active Vehicles: 1170
+Max Travel Time: 79.9994 ticks
+P95 Travel Time: 79.5994 ticks
+System Throughput: 2.46125 vehicles/tick
+Total Delay (actual - free_flow): 72852.3 ticks
+Total System Cost: 24147
+Average Rush Level: 0.479683
+Active Vehicles: 2781
 Active Roads:
-  Karachi -> Lahore | Vehicles: 74/100 | Queue: 25 | Congestion: 74% | Signal: RED
+  Karachi -> Lahore | Vehicles: 54/100 | Queue: 170 | Congestion: 54% | Signal: RED
   Karachi -> Sukkur | Vehicles: 60/60 | Queue: 0 | Congestion: 100% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 47/60 | Queue: 0 | Congestion: 78% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 65/65 | Queue: 103 | Congestion: 100% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 27/40 | Queue: 160 | Congestion: 67% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 69 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 32/60 | Queue: 180 | Congestion: 53% | Signal: RED
+  Sukkur -> Multan | Vehicles: 65/65 | Queue: 443 | Congestion: 100% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 307 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 157 | Congestion: 100% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 164 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 81 | Congestion: 100% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 28 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 70 | Congestion: 100% | Signal: GREEN
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 102 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 13/50 | Queue: 2 | Congestion: 26% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 499 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 145 | Congestion: 100% | Signal: RED
+  Multan -> Lahore | Vehicles: 50/50 | Queue: 135 | Congestion: 100% | Signal: GREEN
+  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 166 | Congestion: 100% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 106 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 100 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 900
-Total Vehicles Arrived: 2980
-Cumulative Avg Travel Time: 49.1461 ticks
-Windowed Avg Travel Time (last 100): 82.3273 ticks
+Total Vehicles Arrived: 2362
+Cumulative Avg Travel Time: 50.9267 ticks
+Windowed Avg Travel Time (last 100): 88.5352 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 89.8992 ticks
-P95 Travel Time: 89.7992 ticks
-System Throughput: 3.31111 vehicles/tick
-Total Delay (actual - free_flow): 124971 ticks
-Total System Cost: 6372.7
-Average Rush Level: 0.32381
-Active Vehicles: 816
+Max Travel Time: 89.9992 ticks
+P95 Travel Time: 89.8992 ticks
+System Throughput: 2.62444 vehicles/tick
+Total Delay (actual - free_flow): 102906 ticks
+Total System Cost: 21284
+Average Rush Level: 0.395238
+Active Vehicles: 2434
 Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 36/60 | Queue: 0 | Congestion: 60% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 0/60 | Queue: 4 | Congestion: 0% | Signal: RED
-  Sukkur -> Multan | Vehicles: 0/65 | Queue: 134 | Congestion: 0% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 32/40 | Queue: 106 | Congestion: 80% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 40 | Congestion: 100% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 95/100 | Queue: 60 | Congestion: 95% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 26 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 39/60 | Queue: 120 | Congestion: 65% | Signal: RED
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 450 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 262 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 128 | Congestion: 100% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 147 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 53 | Congestion: 100% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 5/50 | Queue: 5 | Congestion: 10% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 42 | Congestion: 100% | Signal: RED
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 102 | Congestion: 0% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 484 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 147 | Congestion: 0% | Signal: RED
+  Multan -> Lahore | Vehicles: 50/50 | Queue: 105 | Congestion: 100% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 4/50 | Queue: 123 | Congestion: 8% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 31/50 | Queue: 95 | Congestion: 62% | Signal: GREEN
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1000
-Total Vehicles Arrived: 3247
-Cumulative Avg Travel Time: 52.7439 ticks
-Windowed Avg Travel Time (last 100): 95.1871 ticks
+Total Vehicles Arrived: 2777
+Cumulative Avg Travel Time: 57.5626 ticks
+Windowed Avg Travel Time (last 100): 99.4351 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 99.899 ticks
-P95 Travel Time: 99.799 ticks
-System Throughput: 3.247 vehicles/tick
-Total Delay (actual - free_flow): 147903 ticks
-Total System Cost: 3985.16
-Average Rush Level: 0.330037
-Active Vehicles: 582
+Max Travel Time: 99.999 ticks
+P95 Travel Time: 99.999 ticks
+System Throughput: 2.777 vehicles/tick
+Total Delay (actual - free_flow): 139108 ticks
+Total System Cost: 18632.6
+Average Rush Level: 0.310794
+Active Vehicles: 2052
 Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 36/60 | Queue: 0 | Congestion: 60% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 0/60 | Queue: 3 | Congestion: 0% | Signal: RED
-  Sukkur -> Multan | Vehicles: 2/65 | Queue: 72 | Congestion: 3% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 31 | Congestion: 100% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 41 | Congestion: 100% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 106 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 27 | Congestion: 100% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 9 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 3 | Congestion: 100% | Signal: RED
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 102 | Congestion: 0% | Signal: RED
+  Karachi -> Lahore | Vehicles: 30/100 | Queue: 38 | Congestion: 30% | Signal: GREEN
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 26 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 58/60 | Queue: 37 | Congestion: 96% | Signal: RED
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 453 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 213 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 98 | Congestion: 100% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 485 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 121 | Congestion: 0% | Signal: RED
+  Multan -> Lahore | Vehicles: 0/50 | Queue: 72 | Congestion: 0% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 13/50 | Queue: 157 | Congestion: 26% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 36 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1100
-Total Vehicles Arrived: 3509
-Cumulative Avg Travel Time: 55.6324 ticks
-Windowed Avg Travel Time (last 100): 101.36 ticks
+Total Vehicles Arrived: 3058
+Cumulative Avg Travel Time: 61.3743 ticks
+Windowed Avg Travel Time (last 100): 91.3212 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 109.799 ticks
-P95 Travel Time: 109.299 ticks
-System Throughput: 3.19 vehicles/tick
-Total Delay (actual - free_flow): 169833 ticks
-Total System Cost: 1543.77
-Average Rush Level: 0.292698
-Active Vehicles: 335
+Max Travel Time: 109.999 ticks
+P95 Travel Time: 109.599 ticks
+System Throughput: 2.78 vehicles/tick
+Total Delay (actual - free_flow): 164604 ticks
+Total System Cost: 15365.3
+Average Rush Level: 0.404524
+Active Vehicles: 1786
 Active Roads:
-  Karachi -> Lahore | Vehicles: 24/100 | Queue: 0 | Congestion: 24% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 36/60 | Queue: 0 | Congestion: 60% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 5/60 | Queue: 0 | Congestion: 8% | Signal: RED
-  Sukkur -> Multan | Vehicles: 65/65 | Queue: 12 | Congestion: 100% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 0 | Congestion: 100% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 11/20 | Queue: 0 | Congestion: 55% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 39/45 | Queue: 78 | Congestion: 86% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 17/30 | Queue: 1 | Congestion: 56% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 3/50 | Queue: 8 | Congestion: 6% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 7/50 | Queue: 0 | Congestion: 14% | Signal: RED
-  Lahore -> Multan | Vehicles: 0/50 | Queue: 52 | Congestion: 0% | Signal: RED
-  Islamabad -> Lahore | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
+  Karachi -> Sukkur | Vehicles: 60/60 | Queue: 28 | Congestion: 100% | Signal: GREEN
+  Sukkur -> Lahore | Vehicles: 39/60 | Queue: 0 | Congestion: 65% | Signal: RED
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 456 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 33/40 | Queue: 164 | Congestion: 82% | Signal: RED
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 72 | Congestion: 100% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 468 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 30/30 | Queue: 92 | Congestion: 100% | Signal: RED
+  Multan -> Lahore | Vehicles: 44/50 | Queue: 1 | Congestion: 88% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 127 | Congestion: 100% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 7/50 | Queue: 0 | Congestion: 14% | Signal: GREEN
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1200
-Total Vehicles Arrived: 3711
-Cumulative Avg Travel Time: 57.1607 ticks
-Windowed Avg Travel Time (last 100): 82.7833 ticks
+Total Vehicles Arrived: 3430
+Cumulative Avg Travel Time: 66.4798 ticks
+Windowed Avg Travel Time (last 100): 116.533 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 119.099 ticks
-P95 Travel Time: 117.199 ticks
-System Throughput: 3.0925 vehicles/tick
-Total Delay (actual - free_flow): 185428 ticks
-Total System Cost: 524.803
-Average Rush Level: 0.20881
-Active Vehicles: 144
+Max Travel Time: 119.999 ticks
+P95 Travel Time: 119.999 ticks
+System Throughput: 2.85833 vehicles/tick
+Total Delay (actual - free_flow): 202030 ticks
+Total System Cost: 12972.6
+Average Rush Level: 0.265397
+Active Vehicles: 1425
 Active Roads:
-  Karachi -> Lahore | Vehicles: 25/100 | Queue: 0 | Congestion: 25% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 36/60 | Queue: 0 | Congestion: 60% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 32/60 | Queue: 0 | Congestion: 53% | Signal: GREEN
   Sukkur -> Lahore | Vehicles: 3/60 | Queue: 0 | Congestion: 5% | Signal: RED
-  Sukkur -> Multan | Vehicles: 0/65 | Queue: 13 | Congestion: 0% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 420 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 105 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 44 | Congestion: 100% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 45/45 | Queue: 35 | Congestion: 100% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 13/50 | Queue: 0 | Congestion: 26% | Signal: GREEN
-  Lahore -> Multan | Vehicles: 50/50 | Queue: 2 | Congestion: 100% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 456 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 92 | Congestion: 0% | Signal: RED
+  Multan -> Lahore | Vehicles: 10/50 | Queue: 0 | Congestion: 20% | Signal: GREEN
+  Lahore -> Islamabad | Vehicles: 25/50 | Queue: 48 | Congestion: 50% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 6 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1300
-Total Vehicles Arrived: 3853
-Cumulative Avg Travel Time: 57.9317 ticks
-Windowed Avg Travel Time (last 100): 61.3655 ticks
+Total Vehicles Arrived: 3576
+Cumulative Avg Travel Time: 68.7966 ticks
+Windowed Avg Travel Time (last 100): 125.216 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 121.699 ticks
-P95 Travel Time: 121.399 ticks
-System Throughput: 2.96385 vehicles/tick
-Total Delay (actual - free_flow): 195444 ticks
-Total System Cost: 12.0189
-Average Rush Level: 0.140944
-Active Vehicles: 25
+Max Travel Time: 129.999 ticks
+P95 Travel Time: 129.099 ticks
+System Throughput: 2.75077 vehicles/tick
+Total Delay (actual - free_flow): 218990 ticks
+Total System Cost: 11269.1
+Average Rush Level: 0.32127
+Active Vehicles: 1302
 Active Roads:
-  Karachi -> Lahore | Vehicles: 26/100 | Queue: 0 | Congestion: 26% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 2 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: RED
   Sukkur -> Lahore | Vehicles: 6/60 | Queue: 0 | Congestion: 10% | Signal: RED
-  Sukkur -> Multan | Vehicles: 1/65 | Queue: 0 | Congestion: 1% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: RED
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 424 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 36/40 | Queue: 60 | Congestion: 90% | Signal: RED
+  Quetta -> DG Khan | Vehicles: 20/20 | Queue: 15 | Congestion: 100% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 2/30 | Queue: 0 | Congestion: 6% | Signal: RED
-  Multan -> Lahore | Vehicles: 9/50 | Queue: 0 | Congestion: 18% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-  Lahore -> Multan | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 452 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 18/30 | Queue: 47 | Congestion: 60% | Signal: RED
+  Multan -> Lahore | Vehicles: 7/50 | Queue: 0 | Congestion: 14% | Signal: GREEN
+  Lahore -> Islamabad | Vehicles: 50/50 | Queue: 0 | Congestion: 100% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 10/50 | Queue: 0 | Congestion: 20% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1400
-Total Vehicles Arrived: 3895
-Cumulative Avg Travel Time: 57.4821 ticks
-Windowed Avg Travel Time (last 100): 29.6179 ticks
+Total Vehicles Arrived: 3761
+Cumulative Avg Travel Time: 71.0987 ticks
+Windowed Avg Travel Time (last 100): 130.162 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 85.2993 ticks
-System Throughput: 2.78214 vehicles/tick
-Total Delay (actual - free_flow): 195857 ticks
-Total System Cost: 12.2328
-Average Rush Level: 0.140163
-Active Vehicles: 25
+Max Travel Time: 139.999 ticks
+P95 Travel Time: 139.699 ticks
+System Throughput: 2.68643 vehicles/tick
+Total Delay (actual - free_flow): 238920 ticks
+Total System Cost: 10440.7
+Average Rush Level: 0.254127
+Active Vehicles: 1159
 Active Roads:
-  Karachi -> Lahore | Vehicles: 31/100 | Queue: 0 | Congestion: 31% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 2/60 | Queue: 0 | Congestion: 3% | Signal: RED
-  Sukkur -> Multan | Vehicles: 6/65 | Queue: 0 | Congestion: 9% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: RED
+  Karachi -> Lahore | Vehicles: 35/100 | Queue: 0 | Congestion: 35% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: RED
+  Sukkur -> Lahore | Vehicles: 3/60 | Queue: 0 | Congestion: 5% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 435 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 40/40 | Queue: 3 | Congestion: 100% | Signal: GREEN
+  Quetta -> DG Khan | Vehicles: 12/20 | Queue: 0 | Congestion: 60% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 3/30 | Queue: 0 | Congestion: 10% | Signal: RED
-  Multan -> Lahore | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 3/50 | Queue: 0 | Congestion: 6% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 449 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 24/30 | Queue: 14 | Congestion: 80% | Signal: RED
+  Multan -> Lahore | Vehicles: 1/50 | Queue: 6 | Congestion: 2% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 8 | Congestion: 0% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
+  Islamabad -> Lahore | Vehicles: 0/50 | Queue: 3 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1500
-Total Vehicles Arrived: 3939
-Cumulative Avg Travel Time: 56.9298 ticks
-Windowed Avg Travel Time (last 100): 15.448 ticks
+Total Vehicles Arrived: 3893
+Cumulative Avg Travel Time: 71.8163 ticks
+Windowed Avg Travel Time (last 100): 80.8326 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 49.2998 ticks
-System Throughput: 2.626 vehicles/tick
-Total Delay (actual - free_flow): 195915 ticks
-Total System Cost: 12.7225
-Average Rush Level: 0.153044
-Active Vehicles: 29
+Max Travel Time: 150 ticks
+P95 Travel Time: 148.9 ticks
+System Throughput: 2.59533 vehicles/tick
+Total Delay (actual - free_flow): 250226 ticks
+Total System Cost: 9476.2
+Average Rush Level: 0.234921
+Active Vehicles: 1075
 Active Roads:
-  Karachi -> Lahore | Vehicles: 28/100 | Queue: 0 | Congestion: 28% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 4/60 | Queue: 0 | Congestion: 6% | Signal: RED
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 0 | Congestion: 4% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 6/20 | Queue: 0 | Congestion: 30% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 37/100 | Queue: 0 | Congestion: 37% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: RED
+  Sukkur -> Lahore | Vehicles: 3/60 | Queue: 0 | Congestion: 5% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 65/65 | Queue: 377 | Congestion: 100% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 18/40 | Queue: 0 | Congestion: 45% | Signal: RED
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 1/30 | Queue: 0 | Congestion: 3% | Signal: RED
-  Multan -> Lahore | Vehicles: 5/50 | Queue: 0 | Congestion: 10% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 3/50 | Queue: 0 | Congestion: 6% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 444 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Islamabad | Vehicles: 5/30 | Queue: 0 | Congestion: 16% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 16/50 | Queue: 1 | Congestion: 32% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 3/50 | Queue: 0 | Congestion: 6% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1600
-Total Vehicles Arrived: 3983
-Cumulative Avg Travel Time: 56.3941 ticks
-Windowed Avg Travel Time (last 100): 8.196 ticks
+Total Vehicles Arrived: 4045
+Cumulative Avg Travel Time: 73.8601 ticks
+Windowed Avg Travel Time (last 100): 137.731 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 12.3 ticks
-System Throughput: 2.48938 vehicles/tick
-Total Delay (actual - free_flow): 195980 ticks
-Total System Cost: 52.2174
-Average Rush Level: 0.137806
-Active Vehicles: 23
+Max Travel Time: 159.501 ticks
+P95 Travel Time: 158.9 ticks
+System Throughput: 2.52813 vehicles/tick
+Total Delay (actual - free_flow): 268429 ticks
+Total System Cost: 8987.24
+Average Rush Level: 0.156508
+Active Vehicles: 923
 Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 3/60 | Queue: 0 | Congestion: 5% | Signal: RED
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 0 | Congestion: 4% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: GREEN
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 377 | Congestion: 0% | Signal: RED
   Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 4 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 397 | Congestion: 100% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 7/50 | Queue: 0 | Congestion: 14% | Signal: RED
+  Lahore -> Islamabad | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1700
-Total Vehicles Arrived: 4013
-Cumulative Avg Travel Time: 56.0395 ticks
-Windowed Avg Travel Time (last 100): 8.658 ticks
+Total Vehicles Arrived: 4154
+Cumulative Avg Travel Time: 76.2253 ticks
+Windowed Avg Travel Time (last 100): 167.15 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.1 ticks
-System Throughput: 2.36059 vehicles/tick
-Total Delay (actual - free_flow): 196034 ticks
-Total System Cost: 21.768
-Average Rush Level: 0.129198
-Active Vehicles: 12
+Max Travel Time: 170.001 ticks
+P95 Travel Time: 169.501 ticks
+System Throughput: 2.44353 vehicles/tick
+Total Delay (actual - free_flow): 285723 ticks
+Total System Cost: 7827.35
+Average Rush Level: 0.160977
+Active Vehicles: 814
 Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 0/60 | Queue: 1 | Congestion: 0% | Signal: RED
-  Sukkur -> Multan | Vehicles: 1/65 | Queue: 0 | Congestion: 1% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 1/20 | Queue: 0 | Congestion: 5% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Multan -> Lahore | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 3/50 | Queue: 0 | Congestion: 6% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: RED
+  Sukkur -> Multan | Vehicles: 10/65 | Queue: 312 | Congestion: 15% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 346 | Congestion: 100% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 6/50 | Queue: 0 | Congestion: 12% | Signal: RED
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1800
-Total Vehicles Arrived: 4028
-Cumulative Avg Travel Time: 55.87 ticks
-Windowed Avg Travel Time (last 100): 8.887 ticks
+Total Vehicles Arrived: 4241
+Cumulative Avg Travel Time: 78.2658 ticks
+Windowed Avg Travel Time (last 100): 174.86 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 14.5 ticks
-System Throughput: 2.23778 vehicles/tick
-Total Delay (actual - free_flow): 196068 ticks
-Total System Cost: 11.7109
-Average Rush Level: 0.125706
-Active Vehicles: 7
+Max Travel Time: 180.002 ticks
+P95 Travel Time: 180.002 ticks
+System Throughput: 2.35611 vehicles/tick
+Total Delay (actual - free_flow): 300634 ticks
+Total System Cost: 6600.69
+Average Rush Level: 0.18735
+Active Vehicles: 727
 Active Roads:
-  Karachi -> Lahore | Vehicles: 26/100 | Queue: 0 | Congestion: 26% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Multan | Vehicles: 1/65 | Queue: 0 | Congestion: 1% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: RED
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 2/30 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 46/65 | Queue: 247 | Congestion: 70% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 288 | Congestion: 100% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 6/50 | Queue: 0 | Congestion: 12% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 1900
-Total Vehicles Arrived: 4041
-Cumulative Avg Travel Time: 55.7171 ticks
-Windowed Avg Travel Time (last 100): 8.913 ticks
+Total Vehicles Arrived: 4340
+Cumulative Avg Travel Time: 80.6634 ticks
+Windowed Avg Travel Time (last 100): 183.343 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 15.3 ticks
-System Throughput: 2.12684 vehicles/tick
-Total Delay (actual - free_flow): 196089 ticks
-Total System Cost: 11.9263
-Average Rush Level: 0.132312
-Active Vehicles: 12
+Max Travel Time: 189.802 ticks
+P95 Travel Time: 189.202 ticks
+System Throughput: 2.28421 vehicles/tick
+Total Delay (actual - free_flow): 318278 ticks
+Total System Cost: 5404.27
+Average Rush Level: 0.203175
+Active Vehicles: 628
 Active Roads:
-  Karachi -> Lahore | Vehicles: 28/100 | Queue: 0 | Congestion: 28% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Multan | Vehicles: 2/65 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Multan -> Lahore | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 65/65 | Queue: 182 | Congestion: 100% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 233 | Congestion: 100% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 8/50 | Queue: 0 | Congestion: 16% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 123 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 2000
-Total Vehicles Arrived: 4061
-Cumulative Avg Travel Time: 55.4844 ticks
-Windowed Avg Travel Time (last 100): 8.825 ticks
+Total Vehicles Arrived: 4459
+Cumulative Avg Travel Time: 83.688 ticks
+Windowed Avg Travel Time (last 100): 194.425 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 15.3 ticks
-System Throughput: 2.0305 vehicles/tick
-Total Delay (actual - free_flow): 196113 ticks
-Total System Cost: 42.0591
-Average Rush Level: 0.14026
-Active Vehicles: 29
+Max Travel Time: 199.403 ticks
+P95 Travel Time: 198.803 ticks
+System Throughput: 2.2295 vehicles/tick
+Total Delay (actual - free_flow): 340677 ticks
+Total System Cost: 4481.42
+Average Rush Level: 0.190688
+Active Vehicles: 509
 Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 7/60 | Queue: 0 | Congestion: 11% | Signal: RED
-  Sukkur -> Multan | Vehicles: 7/65 | Queue: 0 | Congestion: 10% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 1 | Congestion: 25% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 1/20 | Queue: 0 | Congestion: 5% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: RED
+  Sukkur -> Multan | Vehicles: 0/65 | Queue: 182 | Congestion: 0% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 1/30 | Queue: 0 | Congestion: 3% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 2 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 3/50 | Queue: 0 | Congestion: 6% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 35/45 | Queue: 191 | Congestion: 77% | Signal: RED
+  Multan -> Lahore | Vehicles: 6/50 | Queue: 0 | Congestion: 12% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 50/50 | Queue: 73 | Congestion: 100% | Signal: GREEN
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 2100
-Total Vehicles Arrived: 4112
-Cumulative Avg Travel Time: 54.9041 ticks
-Windowed Avg Travel Time (last 100): 8.883 ticks
+Total Vehicles Arrived: 4623
+Cumulative Avg Travel Time: 87.9962 ticks
+Windowed Avg Travel Time (last 100): 207.479 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.9 ticks
-System Throughput: 1.9581 vehicles/tick
-Total Delay (actual - free_flow): 196196 ticks
-Total System Cost: 32.1688
-Average Rush Level: 0.14324
-Active Vehicles: 26
+Max Travel Time: 210.004 ticks
+P95 Travel Time: 209.704 ticks
+System Throughput: 2.20143 vehicles/tick
+Total Delay (actual - free_flow): 373206 ticks
+Total System Cost: 3177.27
+Average Rush Level: 0.158266
+Active Vehicles: 345
 Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 0/60 | Queue: 2 | Congestion: 0% | Signal: RED
-  Sukkur -> Multan | Vehicles: 5/65 | Queue: 0 | Congestion: 7% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 2/20 | Queue: 0 | Congestion: 10% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: GREEN
+  Sukkur -> Multan | Vehicles: 5/65 | Queue: 117 | Congestion: 7% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 4/30 | Queue: 0 | Congestion: 13% | Signal: RED
-  Multan -> Lahore | Vehicles: 6/50 | Queue: 0 | Congestion: 12% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 126 | Congestion: 100% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 7/50 | Queue: 0 | Congestion: 14% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 73 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 2200
-Total Vehicles Arrived: 4153
-Cumulative Avg Travel Time: 54.4466 ticks
-Windowed Avg Travel Time (last 100): 8.697 ticks
+Total Vehicles Arrived: 4739
+Cumulative Avg Travel Time: 91.0535 ticks
+Windowed Avg Travel Time (last 100): 213.122 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.1 ticks
-System Throughput: 1.88773 vehicles/tick
-Total Delay (actual - free_flow): 196268 ticks
-Total System Cost: 72.1783
-Average Rush Level: 0.142031
-Active Vehicles: 27
+Max Travel Time: 219.204 ticks
+P95 Travel Time: 218.004 ticks
+System Throughput: 2.15409 vehicles/tick
+Total Delay (actual - free_flow): 397307 ticks
+Total System Cost: 2027.22
+Average Rush Level: 0.157094
+Active Vehicles: 229
 Active Roads:
-  Karachi -> Lahore | Vehicles: 26/100 | Queue: 0 | Congestion: 26% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 7/60 | Queue: 0 | Congestion: 11% | Signal: RED
-  Sukkur -> Multan | Vehicles: 4/65 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 2/30 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 2 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 4 | Congestion: 0% | Signal: RED
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: RED
+  Sukkur -> Multan | Vehicles: 6/65 | Queue: 52 | Congestion: 9% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
+  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 76 | Congestion: 100% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 5/50 | Queue: 0 | Congestion: 10% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 73 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 2300
-Total Vehicles Arrived: 4190
-Cumulative Avg Travel Time: 54.0529 ticks
-Windowed Avg Travel Time (last 100): 9.196 ticks
+Total Vehicles Arrived: 4844
+Cumulative Avg Travel Time: 93.3766 ticks
+Windowed Avg Travel Time (last 100): 198.322 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.9 ticks
-System Throughput: 1.82174 vehicles/tick
-Total Delay (actual - free_flow): 196344 ticks
-Total System Cost: 11.9997
-Average Rush Level: 0.133484
-Active Vehicles: 14
+Max Travel Time: 224.805 ticks
+P95 Travel Time: 224.505 ticks
+System Throughput: 2.10609 vehicles/tick
+Total Delay (actual - free_flow): 417290 ticks
+Total System Cost: 501.705
+Average Rush Level: 0.192698
+Active Vehicles: 124
 Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 3/60 | Queue: 0 | Congestion: 5% | Signal: RED
-  Sukkur -> Multan | Vehicles: 1/65 | Queue: 0 | Congestion: 1% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 2/20 | Queue: 0 | Congestion: 10% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: RED
+  Sukkur -> Multan | Vehicles: 52/65 | Queue: 0 | Congestion: 80% | Signal: RED
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Multan -> Lahore | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 45/45 | Queue: 25 | Congestion: 100% | Signal: GREEN
+  Multan -> Lahore | Vehicles: 7/50 | Queue: 0 | Congestion: 14% | Signal: GREEN
+  Lahore -> Multan | Vehicles: 0/50 | Queue: 23 | Congestion: 0% | Signal: RED
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
 Tick: 2400
-Total Vehicles Arrived: 4210
-Cumulative Avg Travel Time: 53.8394 ticks
-Windowed Avg Travel Time (last 100): 9.167 ticks
+Total Vehicles Arrived: 4966
+Cumulative Avg Travel Time: 94.6031 ticks
+Windowed Avg Travel Time (last 100): 138.491 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.6 ticks
-System Throughput: 1.75417 vehicles/tick
-Total Delay (actual - free_flow): 196373 ticks
-Total System Cost: 31.5776
-Average Rush Level: 0.123087
-Active Vehicles: 5
+Max Travel Time: 233.905 ticks
+P95 Travel Time: 233.705 ticks
+System Throughput: 2.06917 vehicles/tick
+Total Delay (actual - free_flow): 433975 ticks
+Total System Cost: 12.8086
+Average Rush Level: 0.131852
+Active Vehicles: 2
 Active Roads:
-  Karachi -> Lahore | Vehicles: 25/100 | Queue: 0 | Congestion: 25% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 1/60 | Queue: 0 | Congestion: 1% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 1/65 | Queue: 0 | Congestion: 1% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 1/20 | Queue: 0 | Congestion: 5% | Signal: GREEN
+  Karachi -> Lahore | Vehicles: 29/100 | Queue: 0 | Congestion: 29% | Signal: RED
+  Karachi -> Sukkur | Vehicles: 31/60 | Queue: 0 | Congestion: 51% | Signal: GREEN
+  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: GREEN
   Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 2 | Congestion: 0% | Signal: RED
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 2500
-Total Vehicles Arrived: 4220
-Cumulative Avg Travel Time: 53.7332 ticks
-Windowed Avg Travel Time (last 100): 9.314 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 14 ticks
-System Throughput: 1.688 vehicles/tick
-Total Delay (actual - free_flow): 196389 ticks
-Total System Cost: 11.6903
-Average Rush Level: 0.125505
-Active Vehicles: 9
-Active Roads:
-  Karachi -> Lahore | Vehicles: 28/100 | Queue: 0 | Congestion: 28% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 1/60 | Queue: 0 | Congestion: 1% | Signal: RED
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 0 | Congestion: 4% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: RED
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Multan -> Lahore | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 2600
-Total Vehicles Arrived: 4240
-Cumulative Avg Travel Time: 53.516 ticks
-Windowed Avg Travel Time (last 100): 9.258 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 14 ticks
-System Throughput: 1.63077 vehicles/tick
-Total Delay (actual - free_flow): 196411 ticks
-Total System Cost: 32.1658
-Average Rush Level: 0.138264
-Active Vehicles: 20
-Active Roads:
-  Karachi -> Lahore | Vehicles: 31/100 | Queue: 0 | Congestion: 31% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 1/60 | Queue: 0 | Congestion: 1% | Signal: RED
-  Sukkur -> Multan | Vehicles: 2/65 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 11/40 | Queue: 0 | Congestion: 27% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 1/30 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 3/50 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 2 | Congestion: 0% | Signal: RED
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 2700
-Total Vehicles Arrived: 4276
-Cumulative Avg Travel Time: 53.1362 ticks
-Windowed Avg Travel Time (last 100): 8.64 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.2 ticks
-System Throughput: 1.5837 vehicles/tick
-Total Delay (actual - free_flow): 196461 ticks
-Total System Cost: 22.5996
-Average Rush Level: 0.150126
-Active Vehicles: 30
-Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 5/60 | Queue: 0 | Congestion: 8% | Signal: RED
-  Sukkur -> Multan | Vehicles: 4/65 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 14/40 | Queue: 0 | Congestion: 35% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 3/30 | Queue: 0 | Congestion: 10% | Signal: RED
-  Multan -> Lahore | Vehicles: 4/50 | Queue: 0 | Congestion: 8% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 1 | Congestion: 0% | Signal: RED
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 2800
-Total Vehicles Arrived: 4321
-Cumulative Avg Travel Time: 52.6752 ticks
-Windowed Avg Travel Time (last 100): 8.449 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.3 ticks
-System Throughput: 1.54321 vehicles/tick
-Total Delay (actual - free_flow): 196538 ticks
-Total System Cost: 62.2979
-Average Rush Level: 0.148203
-Active Vehicles: 30
-Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 3/60 | Queue: 0 | Congestion: 5% | Signal: RED
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 1 | Congestion: 4% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 11/40 | Queue: 0 | Congestion: 27% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 4/30 | Queue: 0 | Congestion: 13% | Signal: RED
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 4 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 8/50 | Queue: 0 | Congestion: 16% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 2900
-Total Vehicles Arrived: 4360
-Cumulative Avg Travel Time: 52.2877 ticks
-Windowed Avg Travel Time (last 100): 9.001 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.5 ticks
-System Throughput: 1.50345 vehicles/tick
-Total Delay (actual - free_flow): 196614 ticks
-Total System Cost: 12.2271
-Average Rush Level: 0.140608
-Active Vehicles: 20
-Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 11/40 | Queue: 0 | Congestion: 27% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 6/50 | Queue: 0 | Congestion: 12% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 4/50 | Queue: 0 | Congestion: 8% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3000
-Total Vehicles Arrived: 4386
-Cumulative Avg Travel Time: 52.0326 ticks
-Windowed Avg Travel Time (last 100): 9.139 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 14.4 ticks
-System Throughput: 1.462 vehicles/tick
-Total Delay (actual - free_flow): 196657 ticks
-Total System Cost: 11.6619
-Average Rush Level: 0.126738
-Active Vehicles: 7
-Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Multan | Vehicles: 1/65 | Queue: 0 | Congestion: 1% | Signal: RED
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 1/20 | Queue: 0 | Congestion: 5% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: GREEN
-  DG Khan -> Islamabad | Vehicles: 1/30 | Queue: 0 | Congestion: 3% | Signal: RED
-  Multan -> Lahore | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3100
-Total Vehicles Arrived: 4399
-Cumulative Avg Travel Time: 51.9013 ticks
-Windowed Avg Travel Time (last 100): 9.032 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 12.7 ticks
-System Throughput: 1.41903 vehicles/tick
-Total Delay (actual - free_flow): 196674 ticks
-Total System Cost: 11.6437
-Average Rush Level: 0.123185
-Active Vehicles: 6
-Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 2/60 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 2/65 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3200
-Total Vehicles Arrived: 4415
-Cumulative Avg Travel Time: 51.7426 ticks
-Windowed Avg Travel Time (last 100): 8.868 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13 ticks
-System Throughput: 1.37969 vehicles/tick
-Total Delay (actual - free_flow): 196692 ticks
-Total System Cost: 11.8841
-Average Rush Level: 0.133221
-Active Vehicles: 15
-Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 2/60 | Queue: 0 | Congestion: 3% | Signal: RED
-  Sukkur -> Multan | Vehicles: 4/65 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 11/40 | Queue: 0 | Congestion: 27% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 1/20 | Queue: 0 | Congestion: 5% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Multan -> Lahore | Vehicles: 3/50 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3300
-Total Vehicles Arrived: 4441
-Cumulative Avg Travel Time: 51.4812 ticks
-Windowed Avg Travel Time (last 100): 8.36 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13 ticks
-System Throughput: 1.34576 vehicles/tick
-Total Delay (actual - free_flow): 196722 ticks
-Total System Cost: 12.4495
-Average Rush Level: 0.152867
-Active Vehicles: 32
-Active Roads:
-  Karachi -> Lahore | Vehicles: 31/100 | Queue: 0 | Congestion: 31% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 5/60 | Queue: 0 | Congestion: 8% | Signal: RED
-  Sukkur -> Multan | Vehicles: 2/65 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 11/40 | Queue: 0 | Congestion: 27% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 3/20 | Queue: 0 | Congestion: 15% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 4/30 | Queue: 0 | Congestion: 13% | Signal: RED
-  Multan -> Lahore | Vehicles: 6/50 | Queue: 0 | Congestion: 12% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 4/50 | Queue: 0 | Congestion: 8% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3400
-Total Vehicles Arrived: 4494
-Cumulative Avg Travel Time: 50.9736 ticks
-Windowed Avg Travel Time (last 100): 8.016 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13 ticks
-System Throughput: 1.32176 vehicles/tick
-Total Delay (actual - free_flow): 196815 ticks
-Total System Cost: 12.2401
-Average Rush Level: 0.149027
-Active Vehicles: 26
-Active Roads:
-  Karachi -> Lahore | Vehicles: 26/100 | Queue: 0 | Congestion: 26% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 2/60 | Queue: 0 | Congestion: 3% | Signal: RED
-  Sukkur -> Multan | Vehicles: 9/65 | Queue: 0 | Congestion: 13% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 4/20 | Queue: 0 | Congestion: 20% | Signal: RED
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 3/30 | Queue: 0 | Congestion: 10% | Signal: RED
-  Multan -> Lahore | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 5/50 | Queue: 0 | Congestion: 10% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3500
-Total Vehicles Arrived: 4536
-Cumulative Avg Travel Time: 50.5782 ticks
-Windowed Avg Travel Time (last 100): 8.218 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.5 ticks
-System Throughput: 1.296 vehicles/tick
-Total Delay (actual - free_flow): 196879 ticks
-Total System Cost: 11.8723
-Average Rush Level: 0.138026
-Active Vehicles: 19
-Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Lahore | Vehicles: 5/60 | Queue: 0 | Congestion: 8% | Signal: RED
-  Sukkur -> Multan | Vehicles: 2/65 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 1/20 | Queue: 0 | Congestion: 5% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 2/30 | Queue: 0 | Congestion: 6% | Signal: RED
-  Multan -> Lahore | Vehicles: 4/50 | Queue: 0 | Congestion: 8% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3600
-Total Vehicles Arrived: 4562
-Cumulative Avg Travel Time: 50.3392 ticks
-Windowed Avg Travel Time (last 100): 8.47 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.5 ticks
-System Throughput: 1.26722 vehicles/tick
-Total Delay (actual - free_flow): 196931 ticks
-Total System Cost: 21.6883
-Average Rush Level: 0.128521
-Active Vehicles: 9
-Active Roads:
-  Karachi -> Lahore | Vehicles: 26/100 | Queue: 0 | Congestion: 26% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 0 | Congestion: 4% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: GREEN
-  Quetta -> DG Khan | Vehicles: 2/20 | Queue: 0 | Congestion: 10% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Multan -> Lahore | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 1 | Congestion: 0% | Signal: RED
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3700
-Total Vehicles Arrived: 4574
-Cumulative Avg Travel Time: 50.23 ticks
-Windowed Avg Travel Time (last 100): 8.322 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.5 ticks
-System Throughput: 1.23622 vehicles/tick
-Total Delay (actual - free_flow): 196953 ticks
-Total System Cost: 11.6591
-Average Rush Level: 0.125786
-Active Vehicles: 7
-Active Roads:
-  Karachi -> Lahore | Vehicles: 27/100 | Queue: 0 | Congestion: 27% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 2/60 | Queue: 0 | Congestion: 3% | Signal: GREEN
-  Sukkur -> Multan | Vehicles: 1/65 | Queue: 0 | Congestion: 1% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 1/20 | Queue: 0 | Congestion: 5% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 3800
-Total Vehicles Arrived: 4590
-Cumulative Avg Travel Time: 50.0854 ticks
-Windowed Avg Travel Time (last 100): 8.543 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.5 ticks
-System Throughput: 1.20789 vehicles/tick
-Total Delay (actual - free_flow): 196974 ticks
-Total System Cost: 11.787
-Average Rush Level: 0.132886
-Active Vehicles: 12
-Active Roads:
-  Karachi -> Lahore | Vehicles: 26/100 | Queue: 0 | Congestion: 26% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 2/60 | Queue: 0 | Congestion: 3% | Signal: RED
-  Sukkur -> Multan | Vehicles: 3/65 | Queue: 0 | Congestion: 4% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 10/40 | Queue: 0 | Congestion: 25% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 2/20 | Queue: 0 | Congestion: 10% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 1/30 | Queue: 0 | Congestion: 3% | Signal: GREEN
+  DG Khan -> Multan | Vehicles: 28/45 | Queue: 0 | Congestion: 62% | Signal: GREEN
   Multan -> Lahore | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
 ----------------------------------
 
 --- PERFORMANCE METRICS REPORT ---
-Tick: 3900
-Total Vehicles Arrived: 4611
-Cumulative Avg Travel Time: 49.8917 ticks
-Windowed Avg Travel Time (last 100): 8.284 ticks
+Tick: 2411
+Total Vehicles Arrived: 4968
+Cumulative Avg Travel Time: 94.6037 ticks
+Windowed Avg Travel Time (last 100): 137.6 ticks
 Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.5 ticks
-System Throughput: 1.18231 vehicles/tick
-Total Delay (actual - free_flow): 196999 ticks
-Total System Cost: 22.4918
-Average Rush Level: 0.149174
-Active Vehicles: 30
-Active Roads:
-  Karachi -> Lahore | Vehicles: 30/100 | Queue: 0 | Congestion: 30% | Signal: RED
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 5/60 | Queue: 0 | Congestion: 8% | Signal: RED
-  Sukkur -> Multan | Vehicles: 4/65 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 12/40 | Queue: 0 | Congestion: 30% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 4/20 | Queue: 0 | Congestion: 20% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 0/30 | Queue: 1 | Congestion: 0% | Signal: RED
-  Multan -> Lahore | Vehicles: 6/50 | Queue: 0 | Congestion: 12% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 2/50 | Queue: 0 | Congestion: 4% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 4000
-Total Vehicles Arrived: 4661
-Cumulative Avg Travel Time: 49.4522 ticks
-Windowed Avg Travel Time (last 100): 8.583 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.3 ticks
-System Throughput: 1.16525 vehicles/tick
-Total Delay (actual - free_flow): 197100 ticks
-Total System Cost: 122.136
-Average Rush Level: 0.14084
-Active Vehicles: 28
-Active Roads:
-  Karachi -> Lahore | Vehicles: 26/100 | Queue: 0 | Congestion: 26% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: RED
-  Sukkur -> Lahore | Vehicles: 4/60 | Queue: 0 | Congestion: 6% | Signal: RED
-  Sukkur -> Multan | Vehicles: 4/65 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 11/40 | Queue: 0 | Congestion: 27% | Signal: RED
-  Quetta -> DG Khan | Vehicles: 4/20 | Queue: 0 | Congestion: 20% | Signal: GREEN
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: GREEN
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: RED
-  DG Khan -> Islamabad | Vehicles: 2/30 | Queue: 0 | Congestion: 6% | Signal: GREEN
-  Multan -> Lahore | Vehicles: 0/50 | Queue: 2 | Congestion: 0% | Signal: RED
-  Lahore -> Islamabad | Vehicles: 0/50 | Queue: 9 | Congestion: 0% | Signal: RED
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 4100
-Total Vehicles Arrived: 4688
-Cumulative Avg Travel Time: 49.2253 ticks
-Windowed Avg Travel Time (last 100): 8.94501 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.4 ticks
-System Throughput: 1.14341 vehicles/tick
-Total Delay (actual - free_flow): 197157 ticks
-Total System Cost: 11.5593
-Average Rush Level: 0.120132
-Active Vehicles: 1
-Active Roads:
-  Karachi -> Lahore | Vehicles: 25/100 | Queue: 0 | Congestion: 25% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: RED
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: GREEN
-  Lahore -> Islamabad | Vehicles: 1/50 | Queue: 0 | Congestion: 2% | Signal: GREEN
-----------------------------------
-
---- PERFORMANCE METRICS REPORT ---
-Tick: 4105
-Total Vehicles Arrived: 4689
-Cumulative Avg Travel Time: 49.2181 ticks
-Windowed Avg Travel Time (last 100): 9.00901 ticks
-Min Travel Time: 1.9 ticks
-Max Travel Time: 129.999 ticks
-P95 Travel Time: 13.5 ticks
-System Throughput: 1.14227 vehicles/tick
-Total Delay (actual - free_flow): 197162 ticks
-Total System Cost: 11.5565
-Average Rush Level: 0.11918
+Max Travel Time: 233.905 ticks
+P95 Travel Time: 233.705 ticks
+System Throughput: 2.06056 vehicles/tick
+Total Delay (actual - free_flow): 434153 ticks
+Total System Cost: 0
+Average Rush Level: 0
 Active Vehicles: 0
-Active Roads:
-  Karachi -> Lahore | Vehicles: 25/100 | Queue: 0 | Congestion: 25% | Signal: GREEN
-  Karachi -> Sukkur | Vehicles: 35/60 | Queue: 0 | Congestion: 58% | Signal: GREEN
-  Quetta -> Islamabad | Vehicles: 9/40 | Queue: 0 | Congestion: 22% | Signal: RED
-  Quetta -> Sukkur | Vehicles: 15/15 | Queue: 0 | Congestion: 100% | Signal: RED
-  DG Khan -> Multan | Vehicles: 20/45 | Queue: 0 | Congestion: 44% | Signal: GREEN
 ----------------------------------
