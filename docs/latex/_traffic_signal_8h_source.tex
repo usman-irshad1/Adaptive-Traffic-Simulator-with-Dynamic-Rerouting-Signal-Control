@@ -1,0 +1,60 @@
+\doxysection{Traffic\+Signal.\+h}
+\hypertarget{_traffic_signal_8h_source}{}\label{_traffic_signal_8h_source}\doxymbox{\hyperlink{_traffic_signal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00003}\doxymbox{\hyperlink{struct_traffic_signal}{00003}}\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_traffic_signal_a735c742416dde5838201086ab2a54f8a}{TrafficSignal}}\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00004}\doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{00004}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{greentimer}};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00005}\doxymbox{\hyperlink{struct_traffic_signal_a1dc55c501cf486403a583b87c4ea1490}{00005}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_traffic_signal_a1dc55c501cf486403a583b87c4ea1490}{minGreenTime}};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00006}\doxymbox{\hyperlink{struct_traffic_signal_aea48c826489ba082acc9c0fca532f600}{00006}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_traffic_signal_aea48c826489ba082acc9c0fca532f600}{queueThreshold}};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00007}\doxymbox{\hyperlink{struct_traffic_signal_a1055896b4a71e89642e4b68ccba53b7f}{00007}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_traffic_signal_a1055896b4a71e89642e4b68ccba53b7f}{maxGreenTime}};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00008}\doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{00008}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{redtimer}};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00009}\doxymbox{\hyperlink{struct_traffic_signal_a3fe7ac2f328c7f2e8480bec527fc65da}{00009}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_traffic_signal_a3fe7ac2f328c7f2e8480bec527fc65da}{pa}},\ \doxymbox{\hyperlink{struct_traffic_signal_a21cce737cb1c27978c18e8555b7bd4d0}{pb}};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00010}\doxymbox{\hyperlink{struct_traffic_signal_a735c742416dde5838201086ab2a54f8a}{00010}}\ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_a735c742416dde5838201086ab2a54f8a}{TrafficSignal}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00011}00011\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{greentimer}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_a1dc55c501cf486403a583b87c4ea1490}{minGreenTime}}\ =\ 2;\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_aea48c826489ba082acc9c0fca532f600}{queueThreshold}}\ =\ 3;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_a1055896b4a71e89642e4b68ccba53b7f}{maxGreenTime}}\ =\ 8;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_a3fe7ac2f328c7f2e8480bec527fc65da}{pa}}\ =\ 10;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_a21cce737cb1c27978c18e8555b7bd4d0}{pb}}\ =\ 7;\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{redtimer}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00018}00018\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00020}\doxymbox{\hyperlink{struct_traffic_signal_ad511fcb7c7ed0ef2c74ef721e7d333df}{00020}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_traffic_signal_ad511fcb7c7ed0ef2c74ef721e7d333df}{Timer}}(\textcolor{keywordtype}{bool}\ state,\ \textcolor{keywordtype}{float}\ time)\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (state\ ==\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{greentimer}}\ +=\ time;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{redtimer}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{redtimer}}\ +=\ time;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00028}00028\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00029}\doxymbox{\hyperlink{struct_traffic_signal_a1d19589faa58d871cf785747a5987791}{00029}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_traffic_signal_a1d19589faa58d871cf785747a5987791}{starvationCost}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{redtimer}}\ *\ 3.5f;\ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00030}\doxymbox{\hyperlink{struct_traffic_signal_a5ecb82ecbda1a80231855c76b74fd302}{00030}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_traffic_signal_a5ecb82ecbda1a80231855c76b74fd302}{turnGreen}}(\textcolor{keywordtype}{bool}\&\ state)\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ state\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{greentimer}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00034}\doxymbox{\hyperlink{struct_traffic_signal_aed72c3f26460de980016fd5e54ad573f}{00034}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_traffic_signal_aed72c3f26460de980016fd5e54ad573f}{turnRed}}(\textcolor{keywordtype}{bool}\&\ state)\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ state\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal_aa10b3d3767956bcac0c34c8f64183402}{redtimer}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00039}\doxymbox{\hyperlink{struct_traffic_signal_a03987971e60235922ee4cc0641ede6db}{00039}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{struct_traffic_signal_a03987971e60235922ee4cc0641ede6db}{canSwitch}}(\textcolor{keywordtype}{int}\ currentQueue,\ \textcolor{keywordtype}{int}\ maxOtherQueue)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{greentimer}}\ <\ \doxymbox{\hyperlink{struct_traffic_signal_a1dc55c501cf486403a583b87c4ea1490}{minGreenTime}})}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_traffic_signal_ad683db5ff22b610dc2b168f7503a3376}{mustSwitch}}())\ \{}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ bottleneckRatio\ =\ (float)currentQueue\ /\ maxOtherQueue;}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bottleneckRatio\ >\ 3.0f)\ \{\ \ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (currentQueue\ <\ maxOtherQueue)\ ||\ (\doxymbox{\hyperlink{struct_traffic_signal_a1d19589faa58d871cf785747a5987791}{starvationCost}}()\ >\ 12.0f);}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00053}00053\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00054}\doxymbox{\hyperlink{struct_traffic_signal_ad683db5ff22b610dc2b168f7503a3376}{00054}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{struct_traffic_signal_ad683db5ff22b610dc2b168f7503a3376}{mustSwitch}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_traffic_signal_abfef53fd7e22dc6a188eb5326940c42e}{greentimer}}\ >=\ \doxymbox{\hyperlink{struct_traffic_signal_a1055896b4a71e89642e4b68ccba53b7f}{maxGreenTime}};\ \}}
+\DoxyCodeLine{\Hypertarget{_traffic_signal_8h_source_l00055}00055\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,140 @@
+\doxysection{Road\+Details.\+h}
+\hypertarget{_road_details_8h_source}{}\label{_road_details_8h_source}\doxymbox{\hyperlink{_road_details_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_traffic_signal_8h}{TrafficSignal.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00007}00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00009}\doxymbox{\hyperlink{struct_road_details}{00009}}\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_road_details_a0387742036ab698ca52d5b91225cca39}{RoadDetails}}\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00010}\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{00010}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_ac507df35ad4da1b293d3e35426a73e25}{length}},\ \doxymbox{\hyperlink{struct_road_details_a5961f249291c5ed89b9d99973703de08}{max\_speed}},\ \doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00011}\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{00011}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00012}\doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{00012}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00013}\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{00013}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00014}\doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{00014}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{NonIdealWeight}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00015}\doxymbox{\hyperlink{struct_road_details_a091452b48c0dab42cb8e7f5d81c3d220}{00015}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_a091452b48c0dab42cb8e7f5d81c3d220}{a}},\ \doxymbox{\hyperlink{struct_road_details_a934e0a1b2172f52e649783c38826745c}{b}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00016}\doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{00016}}\ \ \ \ \ \doxymbox{\hyperlink{struct_traffic_signal}{TrafficSignal}}\ \doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00018}\doxymbox{\hyperlink{struct_road_details_a346309fa6b5c5b7ba3e18b64a2d14f36}{00018}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_road_details_a346309fa6b5c5b7ba3e18b64a2d14f36}{dischargeCapcity}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00019}\doxymbox{\hyperlink{struct_road_details_a92816210e966a1d8d560b7c8417d05fc}{00019}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{struct_road_details_a92816210e966a1d8d560b7c8417d05fc}{operator<}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_road_details_a0387742036ab698ca52d5b91225cca39}{RoadDetails}}\&\ other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\doxymbox{\hyperlink{struct_road_details_a0da3fd2452fbaef2da1e7db355fc80ca}{calculateWeight}}()\ <\ other.\doxymbox{\hyperlink{struct_road_details_a0da3fd2452fbaef2da1e7db355fc80ca}{calculateWeight}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00023}\doxymbox{\hyperlink{struct_road_details_a0da3fd2452fbaef2da1e7db355fc80ca}{00023}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_a0da3fd2452fbaef2da1e7db355fc80ca}{calculateWeight}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ best\ =\ \doxymbox{\hyperlink{struct_road_details_ac507df35ad4da1b293d3e35426a73e25}{length}}\ /\ \doxymbox{\hyperlink{struct_road_details_a5961f249291c5ed89b9d99973703de08}{max\_speed}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}}\ <=\ 0)}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1000000;\ \textcolor{comment}{//\ Safety\ for\ division}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ best\ *\ (1.0f\ +\ \doxymbox{\hyperlink{struct_road_details_a091452b48c0dab42cb8e7f5d81c3d220}{a}}\ *\ pow((\textcolor{keywordtype}{float})\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ /\ \doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}},\ \doxymbox{\hyperlink{struct_road_details_a934e0a1b2172f52e649783c38826745c}{b}}));}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00028}00028\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00029}\doxymbox{\hyperlink{struct_road_details_a0387742036ab698ca52d5b91225cca39}{00029}}\ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a0387742036ab698ca52d5b91225cca39}{RoadDetails}}(\textcolor{keywordtype}{float}\ ab,\ \textcolor{keywordtype}{float}\ bc,\ \textcolor{keywordtype}{float}\ c,\ \textcolor{keywordtype}{float}\ aplha\ =\ 0.5,\ \textcolor{keywordtype}{float}\ beta\ =\ 4,}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ discharge\ =\ 5)}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{struct_road_details_a091452b48c0dab42cb8e7f5d81c3d220}{a}}(aplha),\ \doxymbox{\hyperlink{struct_road_details_a934e0a1b2172f52e649783c38826745c}{b}}(beta),\ \doxymbox{\hyperlink{struct_road_details_a346309fa6b5c5b7ba3e18b64a2d14f36}{dischargeCapcity}}(discharge)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_ac507df35ad4da1b293d3e35426a73e25}{length}}\ =\ ab;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a5961f249291c5ed89b9d99973703de08}{max\_speed}}\ =\ bc;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}}\ =\ c;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00039}\doxymbox{\hyperlink{struct_road_details_a669dfcadc27d416b6511a92684442ef9}{00039}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_a669dfcadc27d416b6511a92684442ef9}{DischargeAllowed}}(\textcolor{keywordtype}{int}\ capacity\_ofnext\_road,\ \textcolor{keywordtype}{int}\ pop\_of\_next\_road)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ allowed\ =\ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ avail\ =\ capacity\_ofnext\_road\ -\/\ pop\_of\_next\_road;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (avail\ >\ allowed)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a346309fa6b5c5b7ba3e18b64a2d14f36}{dischargeCapcity}}\ <=\ allowed)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}}\ *\ \doxymbox{\hyperlink{struct_road_details_a346309fa6b5c5b7ba3e18b64a2d14f36}{dischargeCapcity}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}}\ *\ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a346309fa6b5c5b7ba3e18b64a2d14f36}{dischargeCapcity}}\ >\ avail)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ avail\ *\ \doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_a346309fa6b5c5b7ba3e18b64a2d14f36}{dischargeCapcity}}\ *\ \doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00057}\doxymbox{\hyperlink{struct_road_details_aeba1d96f6e1cf5e96f59c887d1f2a0ef}{00057}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_aeba1d96f6e1cf5e96f59c887d1f2a0ef}{TimeCal}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00058}00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}}\ <=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_a3d1c2ac79846045deac57b0b89341471}{bestTime}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{NonIdealWeight}}\ =\ \doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{NonIdealWeight}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00064}00064\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00066}\doxymbox{\hyperlink{struct_road_details_a3d1c2ac79846045deac57b0b89341471}{00066}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_a3d1c2ac79846045deac57b0b89341471}{bestTime}}()\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_ac507df35ad4da1b293d3e35426a73e25}{length}}\ /\ \doxymbox{\hyperlink{struct_road_details_a5961f249291c5ed89b9d99973703de08}{max\_speed}};\ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00068}\doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{00068}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}}\ <=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_a3d1c2ac79846045deac57b0b89341471}{bestTime}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{NonIdealWeight}}\ =\ \doxymbox{\hyperlink{struct_road_details_a3d1c2ac79846045deac57b0b89341471}{bestTime}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00073}00073\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{NonIdealWeight}}\ =}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{NonIdealWeight}}\ *\ (1\ +\ \doxymbox{\hyperlink{struct_road_details_a091452b48c0dab42cb8e7f5d81c3d220}{a}}\ *\ pow((\textcolor{keywordtype}{float})\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ /\ \doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}},\ \doxymbox{\hyperlink{struct_road_details_a934e0a1b2172f52e649783c38826745c}{b}}));}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_road_details_a0dd4b5909d757fe5d7458bb0aaa9c672}{NonIdealWeight}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00077}\doxymbox{\hyperlink{struct_road_details_ad2d8b3a44383c9950e6cc4b4606b9f1a}{00077}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_ad2d8b3a44383c9950e6cc4b4606b9f1a}{vehicleEntersRoad}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00078}00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ <\ \doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}})\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}++;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00083}\doxymbox{\hyperlink{struct_road_details_abd834d75bb646b28fcbc9f079dfe6448}{00083}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_abd834d75bb646b28fcbc9f079dfe6448}{vehicleExitsRoad}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00084}00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ >\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00087}00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00088}00088\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00090}\doxymbox{\hyperlink{struct_road_details_a79b080fc1b1572d4214cf6799da7931d}{00090}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_a79b080fc1b1572d4214cf6799da7931d}{updateVehicles}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}\ <\ \doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}})\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}++;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00095}\doxymbox{\hyperlink{struct_road_details_ab807ac493fcc667a2d6571906da7d106}{00095}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_ab807ac493fcc667a2d6571906da7d106}{vehicleJoinsQueue}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}++;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00097}00097\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}();}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00098}00098\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00099}\doxymbox{\hyperlink{struct_road_details_afa8574d48d45a7bace5f79f51ce70a56}{00099}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_afa8574d48d45a7bace5f79f51ce70a56}{vehicleExitsQueue}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00100}00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}\ >\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00102}00102\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00103}00103\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00104}\doxymbox{\hyperlink{struct_road_details_a2df873616c5e10cdd557f807d9ffc04e}{00104}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_a2df873616c5e10cdd557f807d9ffc04e}{decVehicles}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00105}00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}\ >}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ 0)\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00108}00108\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00110}\doxymbox{\hyperlink{struct_road_details_a92e40c0e12cbe909252d183c9d9faf82}{00110}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_a92e40c0e12cbe909252d183c9d9faf82}{Congestion}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}}\ <=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00113}00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00114}00114\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{float})\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ /\ \doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}};}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00115}00115\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00117}\doxymbox{\hyperlink{struct_road_details_ae362e5d8bead088aa4631e44bbf993f4}{00117}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_ae362e5d8bead088aa4631e44bbf993f4}{Time}}(\textcolor{keywordtype}{int}\ time)\ \{\ \doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.Timer(\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}},\ time);\ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00119}\doxymbox{\hyperlink{struct_road_details_a1993bf790dd380a04515c84a1aca70b1}{00119}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_a1993bf790dd380a04515c84a1aca70b1}{changeState}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}})\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.turnRed(\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}});}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00122}00122\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00123}00123\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.turnGreen(\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}});}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00125}00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00126}00126\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00127}\doxymbox{\hyperlink{struct_road_details_ab94219e0def9f56b282f2c74eac2be56}{00127}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_ab94219e0def9f56b282f2c74eac2be56}{change\_to\_red}}()\ \{\ \doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.turnRed(\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}});\ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00128}\doxymbox{\hyperlink{struct_road_details_aaf52e4f08967c94442a82dc5253f6425}{00128}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{struct_road_details_aaf52e4f08967c94442a82dc5253f6425}{increment}}(\textcolor{keywordtype}{int}\ time)\ \{\ \doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.Timer(\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}},\ time);\ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00130}\doxymbox{\hyperlink{struct_road_details_acf7c90492228693e42db723f1481615f}{00130}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{struct_road_details_acf7c90492228693e42db723f1481615f}{choosing}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00131}00131\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ currentCost\ =}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ (\doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.pa\ *\ \doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}})\ +\ (\doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.pb\ *\ pow(\doxymbox{\hyperlink{struct_road_details_a92e40c0e12cbe909252d183c9d9faf82}{Congestion}}(),\ 2));}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00133}00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ currentCost;}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00134}00134\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_road_details_8h_source_l00135}00135\ \};}
+
+\end{DoxyCode}

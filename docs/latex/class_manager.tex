@@ -1,0 +1,654 @@
+\doxysection{Manager\texorpdfstring{$<$}{<} t, size \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_manager}{}\label{class_manager}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+
+
+{\ttfamily \+\#include $<$Manger.\+h$>$}
+
+
+
+Collaboration diagram for Manager\texorpdfstring{$<$}{<} t, size \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_manager_a7a9d8cf3d1b5fd09b10b1a2b36f9b3d4}{Manager}} (\doxymbox{\hyperlink{class_graph}{Graph}}$<$ t, size $>$ \texorpdfstring{$\ast$}{*}m)
+\item 
+int \doxymbox{\hyperlink{class_manager_a50433214c0035b6145f9bfa863f8a95d}{get\+Vehicle\+Count}} ()
+\item 
+float \doxymbox{\hyperlink{class_manager_af9554320b5b6a5f6a194330a90e5def4}{get\+Arrived\+Count}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_aa096455f1fb6db1d64381ba40b1924b0}{entrance}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_aef9be6b89ef65c0eadad234ef04e6109}{entraingfrom\+Queeto\+Edge}} ()
+\item 
+list$<$ \doxymbox{\hyperlink{structvehicle}{vehicle}}$<$ t $>$ $>$ \& \doxymbox{\hyperlink{class_manager_ad0225e9d82af0bbf8bff4fa02e32b064}{get\+Vehicles}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_a353440025ca159bb34b3af7063376db8}{record\+Arrival}} (float travel\+Time, const vector$<$ t $>$ \&selected\+Path)
+\item 
+void \doxymbox{\hyperlink{class_manager_a66ab5b09246caed3e30768721639ee25}{reached}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_a9d7f391347995c2a77c126aa30827824}{Shortest\+Path}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_aca5ea9096ff8a677c31f33f25cd9730a}{add\+Vehicle}} (int id, t source, t destination)
+\item 
+void \doxymbox{\hyperlink{class_manager_ac9e977b3769ef82a56fa87d08092decc}{arrival\+At\+Intersection}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_a0491c679bd2da5b32514b462d89fd3f1}{update\+Signals}} ()
+\item 
+bool \doxymbox{\hyperlink{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6}{print\+Performance\+Metrics}} (float tick\+Time, float average\+Rush)
+\item 
+void \doxymbox{\hyperlink{class_manager_ab17ffee5b62b18932efc27fffb4e26dc}{print\+CSVHeader}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a}{print\+CSVRow}} (float tick\+Time, float average\+Rush)
+\item 
+void \doxymbox{\hyperlink{class_manager_acc537b5360b5556da217c2a33775c373}{Car\+\_\+timing\+\_\+file}} (float time, int id, string path, string initial\+\_\+and\+\_\+final)
+\item 
+void \doxymbox{\hyperlink{class_manager_af521d9ca788033a79123c004d51367e1}{clear\+Metrics\+File}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_a31d4b22355ac9d9832909f0f4c3dc13e}{print\+Network}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_ace3f1bbef929aedde17485e74d63bb72}{Print\+All\+Conneted\+City\+From\+Acity}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a}{check\+Broken\+Path}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_a0170cc23a3a67917aed9e6f708830fe9}{physics}} ()
+\item 
+void \doxymbox{\hyperlink{class_manager_a336a1e9218b0d04d5f555851d123b352}{inject\+Sinusoidal\+Traffic}} (int current\+Time)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{total\+Arrived\+Count}}
+\item 
+float \doxymbox{\hyperlink{class_manager_a172fcb465802aff188509ed8f0ce1a94}{total\+Time}}
+\item 
+list$<$ \doxymbox{\hyperlink{structvehicle}{vehicle}}$<$ t $>$ $>$ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\+\_\+of\+\_\+vehicles}}
+\item 
+\doxymbox{\hyperlink{class_graph}{Graph}}$<$ t, size $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}
+\item 
+vector$<$ float $>$ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recent\+Travel\+Times}}
+\item 
+float \doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{min\+Travel\+Time}}
+\item 
+float \doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{max\+Travel\+Time}}
+\item 
+float \doxymbox{\hyperlink{class_manager_a99e814ca49a88675d715c451c22cc406}{total\+Free\+Flow\+Time}}
+\item 
+int \doxymbox{\hyperlink{class_manager_a443b0354b5254c7f1613b6bdf92e17ec}{window\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class t, int size$>$\newline
+class Manager$<$ t, size $>$}
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00012}{12}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_manager_a7a9d8cf3d1b5fd09b10b1a2b36f9b3d4}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!Manager@{Manager}}
+\index{Manager@{Manager}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily \label{class_manager_a7a9d8cf3d1b5fd09b10b1a2b36f9b3d4} 
+template$<$class t, int size$>$ \\
+\doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+\+Manager (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_graph}{Graph}}$<$ t, size $>$ \texorpdfstring{$\ast$}{*}}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00024}{24}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_manager_aca5ea9096ff8a677c31f33f25cd9730a}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!addVehicle@{addVehicle}}
+\index{addVehicle@{addVehicle}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{addVehicle()}{addVehicle()}}
+{\footnotesize\ttfamily \label{class_manager_aca5ea9096ff8a677c31f33f25cd9730a} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+add\+Vehicle (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{t}]{source}{, }\item[{t}]{destination}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00250}{250}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_aca5ea9096ff8a677c31f33f25cd9730a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_ac9e977b3769ef82a56fa87d08092decc}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!arrivalAtIntersection@{arrivalAtIntersection}}
+\index{arrivalAtIntersection@{arrivalAtIntersection}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{arrivalAtIntersection()}{arrivalAtIntersection()}}
+{\footnotesize\ttfamily \label{class_manager_ac9e977b3769ef82a56fa87d08092decc} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+arrival\+At\+Intersection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00257}{257}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_ac9e977b3769ef82a56fa87d08092decc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_ac9e977b3769ef82a56fa87d08092decc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_acc537b5360b5556da217c2a33775c373}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!Car\_timing\_file@{Car\_timing\_file}}
+\index{Car\_timing\_file@{Car\_timing\_file}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{Car\_timing\_file()}{Car\_timing\_file()}}
+{\footnotesize\ttfamily \label{class_manager_acc537b5360b5556da217c2a33775c373} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+\+Car\+\_\+timing\+\_\+file (\begin{DoxyParamCaption}\item[{float}]{time}{, }\item[{int}]{id}{, }\item[{string}]{path}{, }\item[{string}]{initial\+\_\+and\+\_\+final}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00485}{485}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_acc537b5360b5556da217c2a33775c373_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!checkBrokenPath@{checkBrokenPath}}
+\index{checkBrokenPath@{checkBrokenPath}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{checkBrokenPath()}{checkBrokenPath()}}
+{\footnotesize\ttfamily \label{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+check\+Broken\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00527}{527}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_af521d9ca788033a79123c004d51367e1}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!clearMetricsFile@{clearMetricsFile}}
+\index{clearMetricsFile@{clearMetricsFile}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{clearMetricsFile()}{clearMetricsFile()}}
+{\footnotesize\ttfamily \label{class_manager_af521d9ca788033a79123c004d51367e1} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+clear\+Metrics\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00499}{499}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_af521d9ca788033a79123c004d51367e1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_aef9be6b89ef65c0eadad234ef04e6109}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!entraingfromQueetoEdge@{entraingfromQueetoEdge}}
+\index{entraingfromQueetoEdge@{entraingfromQueetoEdge}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{entraingfromQueetoEdge()}{entraingfromQueetoEdge()}}
+{\footnotesize\ttfamily \label{class_manager_aef9be6b89ef65c0eadad234ef04e6109} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+entraingfrom\+Queeto\+Edge (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00087}{87}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_aef9be6b89ef65c0eadad234ef04e6109_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_aef9be6b89ef65c0eadad234ef04e6109_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_aa096455f1fb6db1d64381ba40b1924b0}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!entrance@{entrance}}
+\index{entrance@{entrance}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{entrance()}{entrance()}}
+{\footnotesize\ttfamily \label{class_manager_aa096455f1fb6db1d64381ba40b1924b0} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+entrance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00034}{34}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_aa096455f1fb6db1d64381ba40b1924b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_manager_aa096455f1fb6db1d64381ba40b1924b0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_af9554320b5b6a5f6a194330a90e5def4}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!getArrivedCount@{getArrivedCount}}
+\index{getArrivedCount@{getArrivedCount}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{getArrivedCount()}{getArrivedCount()}}
+{\footnotesize\ttfamily \label{class_manager_af9554320b5b6a5f6a194330a90e5def4} 
+template$<$class t, int size$>$ \\
+float \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+get\+Arrived\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00033}{33}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a50433214c0035b6145f9bfa863f8a95d}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!getVehicleCount@{getVehicleCount}}
+\index{getVehicleCount@{getVehicleCount}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{getVehicleCount()}{getVehicleCount()}}
+{\footnotesize\ttfamily \label{class_manager_a50433214c0035b6145f9bfa863f8a95d} 
+template$<$class t, int size$>$ \\
+int \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+get\+Vehicle\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00032}{32}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_ad0225e9d82af0bbf8bff4fa02e32b064}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!getVehicles@{getVehicles}}
+\index{getVehicles@{getVehicles}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{getVehicles()}{getVehicles()}}
+{\footnotesize\ttfamily \label{class_manager_ad0225e9d82af0bbf8bff4fa02e32b064} 
+template$<$class t, int size$>$ \\
+list$<$ \doxymbox{\hyperlink{structvehicle}{vehicle}}$<$ t $>$ $>$ \& \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+get\+Vehicles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00129}{129}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a336a1e9218b0d04d5f555851d123b352}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!injectSinusoidalTraffic@{injectSinusoidalTraffic}}
+\index{injectSinusoidalTraffic@{injectSinusoidalTraffic}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{injectSinusoidalTraffic()}{injectSinusoidalTraffic()}}
+{\footnotesize\ttfamily \label{class_manager_a336a1e9218b0d04d5f555851d123b352} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+inject\+Sinusoidal\+Traffic (\begin{DoxyParamCaption}\item[{int}]{current\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00611}{611}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a336a1e9218b0d04d5f555851d123b352_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_manager_a336a1e9218b0d04d5f555851d123b352_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a0170cc23a3a67917aed9e6f708830fe9}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!physics@{physics}}
+\index{physics@{physics}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{physics()}{physics()}}
+{\footnotesize\ttfamily \label{class_manager_a0170cc23a3a67917aed9e6f708830fe9} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+physics (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00558}{558}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a0170cc23a3a67917aed9e6f708830fe9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_ace3f1bbef929aedde17485e74d63bb72}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!PrintAllConnetedCityFromAcity@{PrintAllConnetedCityFromAcity}}
+\index{PrintAllConnetedCityFromAcity@{PrintAllConnetedCityFromAcity}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{PrintAllConnetedCityFromAcity()}{PrintAllConnetedCityFromAcity()}}
+{\footnotesize\ttfamily \label{class_manager_ace3f1bbef929aedde17485e74d63bb72} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+\+Print\+All\+Conneted\+City\+From\+Acity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00525}{525}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_ab17ffee5b62b18932efc27fffb4e26dc}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!printCSVHeader@{printCSVHeader}}
+\index{printCSVHeader@{printCSVHeader}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{printCSVHeader()}{printCSVHeader()}}
+{\footnotesize\ttfamily \label{class_manager_ab17ffee5b62b18932efc27fffb4e26dc} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+print\+CSVHeader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00439}{439}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_ab17ffee5b62b18932efc27fffb4e26dc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!printCSVRow@{printCSVRow}}
+\index{printCSVRow@{printCSVRow}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{printCSVRow()}{printCSVRow()}}
+{\footnotesize\ttfamily \label{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+print\+CSVRow (\begin{DoxyParamCaption}\item[{float}]{tick\+Time}{, }\item[{float}]{average\+Rush}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00450}{450}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a31d4b22355ac9d9832909f0f4c3dc13e}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!printNetwork@{printNetwork}}
+\index{printNetwork@{printNetwork}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{printNetwork()}{printNetwork()}}
+{\footnotesize\ttfamily \label{class_manager_a31d4b22355ac9d9832909f0f4c3dc13e} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+print\+Network (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00518}{518}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!printPerformanceMetrics@{printPerformanceMetrics}}
+\index{printPerformanceMetrics@{printPerformanceMetrics}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{printPerformanceMetrics()}{printPerformanceMetrics()}}
+{\footnotesize\ttfamily \label{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6} 
+template$<$class t, int size$>$ \\
+bool \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+print\+Performance\+Metrics (\begin{DoxyParamCaption}\item[{float}]{tick\+Time}{, }\item[{float}]{average\+Rush}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00369}{369}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a66ab5b09246caed3e30768721639ee25}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!reached@{reached}}
+\index{reached@{reached}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{reached()}{reached()}}
+{\footnotesize\ttfamily \label{class_manager_a66ab5b09246caed3e30768721639ee25} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+reached (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00158}{158}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a66ab5b09246caed3e30768721639ee25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_manager_a66ab5b09246caed3e30768721639ee25_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a353440025ca159bb34b3af7063376db8}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!recordArrival@{recordArrival}}
+\index{recordArrival@{recordArrival}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{recordArrival()}{recordArrival()}}
+{\footnotesize\ttfamily \label{class_manager_a353440025ca159bb34b3af7063376db8} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+record\+Arrival (\begin{DoxyParamCaption}\item[{float}]{travel\+Time}{, }\item[{const vector$<$ t $>$ \&}]{selected\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00133}{133}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_manager_a353440025ca159bb34b3af7063376db8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a353440025ca159bb34b3af7063376db8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a9d7f391347995c2a77c126aa30827824}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!ShortestPath@{ShortestPath}}
+\index{ShortestPath@{ShortestPath}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{ShortestPath()}{ShortestPath()}}
+{\footnotesize\ttfamily \label{class_manager_a9d7f391347995c2a77c126aa30827824} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+\+Shortest\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00204}{204}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a9d7f391347995c2a77c126aa30827824_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a9d7f391347995c2a77c126aa30827824_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_manager_a0491c679bd2da5b32514b462d89fd3f1}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!updateSignals@{updateSignals}}
+\index{updateSignals@{updateSignals}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{updateSignals()}{updateSignals()}}
+{\footnotesize\ttfamily \label{class_manager_a0491c679bd2da5b32514b462d89fd3f1} 
+template$<$class t, int size$>$ \\
+void \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+update\+Signals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00317}{317}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_a0491c679bd2da5b32514b462d89fd3f1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_manager_a0491c679bd2da5b32514b462d89fd3f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_manager_a55779dccb44a95388ec5310d33b92c67}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!array\_of\_vehicles@{array\_of\_vehicles}}
+\index{array\_of\_vehicles@{array\_of\_vehicles}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{array\_of\_vehicles}{array\_of\_vehicles}}
+{\footnotesize\ttfamily \label{class_manager_a55779dccb44a95388ec5310d33b92c67} 
+template$<$class t, int size$>$ \\
+list$<$\doxymbox{\hyperlink{structvehicle}{vehicle}}$<$t$>$ $>$ \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+array\+\_\+of\+\_\+vehicles\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00015}{15}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!map@{map}}
+\index{map@{map}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \label{class_manager_aeecc62d457b860cb37e2c195cf56e5c4} 
+template$<$class t, int size$>$ \\
+\doxymbox{\hyperlink{class_graph}{Graph}}$<$t, size$>$\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00016}{16}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a23894387d52d803518bbcb88a93078a3}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!maxTravelTime@{maxTravelTime}}
+\index{maxTravelTime@{maxTravelTime}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{maxTravelTime}{maxTravelTime}}
+{\footnotesize\ttfamily \label{class_manager_a23894387d52d803518bbcb88a93078a3} 
+template$<$class t, int size$>$ \\
+float \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+max\+Travel\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00019}{19}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!minTravelTime@{minTravelTime}}
+\index{minTravelTime@{minTravelTime}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{minTravelTime}{minTravelTime}}
+{\footnotesize\ttfamily \label{class_manager_adc85677f7f86301a3ebcdc7d07440fc7} 
+template$<$class t, int size$>$ \\
+float \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+min\+Travel\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a947bfa28895dd730202f347bf8d7f2f4}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!recentTravelTimes@{recentTravelTimes}}
+\index{recentTravelTimes@{recentTravelTimes}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{recentTravelTimes}{recentTravelTimes}}
+{\footnotesize\ttfamily \label{class_manager_a947bfa28895dd730202f347bf8d7f2f4} 
+template$<$class t, int size$>$ \\
+vector$<$float$>$ \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+recent\+Travel\+Times\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00017}{17}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a128c592de3c504d6951beb256c5e69c6}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!totalArrivedCount@{totalArrivedCount}}
+\index{totalArrivedCount@{totalArrivedCount}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{totalArrivedCount}{totalArrivedCount}}
+{\footnotesize\ttfamily \label{class_manager_a128c592de3c504d6951beb256c5e69c6} 
+template$<$class t, int size$>$ \\
+float \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+total\+Arrived\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00013}{13}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a99e814ca49a88675d715c451c22cc406}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!totalFreeFlowTime@{totalFreeFlowTime}}
+\index{totalFreeFlowTime@{totalFreeFlowTime}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{totalFreeFlowTime}{totalFreeFlowTime}}
+{\footnotesize\ttfamily \label{class_manager_a99e814ca49a88675d715c451c22cc406} 
+template$<$class t, int size$>$ \\
+float \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+total\+Free\+Flow\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00020}{20}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a172fcb465802aff188509ed8f0ce1a94}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!totalTime@{totalTime}}
+\index{totalTime@{totalTime}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{totalTime}{totalTime}}
+{\footnotesize\ttfamily \label{class_manager_a172fcb465802aff188509ed8f0ce1a94} 
+template$<$class t, int size$>$ \\
+float \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+total\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00014}{14}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+\Hypertarget{class_manager_a443b0354b5254c7f1613b6bdf92e17ec}\index{Manager$<$ t, size $>$@{Manager$<$ t, size $>$}!windowSize@{windowSize}}
+\index{windowSize@{windowSize}!Manager$<$ t, size $>$@{Manager$<$ t, size $>$}}
+\doxysubsubsection{\texorpdfstring{windowSize}{windowSize}}
+{\footnotesize\ttfamily \label{class_manager_a443b0354b5254c7f1613b6bdf92e17ec} 
+template$<$class t, int size$>$ \\
+int \doxymbox{\hyperlink{class_manager}{Manager}}$<$ t, size $>$::\+window\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_manger_8h_source_l00021}{21}} of file \doxymbox{\hyperlink{_manger_8h_source}{Manger.\+h}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_manger_8h}{Manger.\+h}}\end{DoxyCompactItemize}

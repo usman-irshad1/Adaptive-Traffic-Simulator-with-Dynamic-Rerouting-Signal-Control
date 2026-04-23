@@ -1,0 +1,634 @@
+\doxysection{Manger.\+h}
+\hypertarget{_manger_8h_source}{}\label{_manger_8h_source}\doxymbox{\hyperlink{_manger_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_graph_8h}{Graph.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{vehicle_8h}{vehicle.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00010}00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00012}\doxymbox{\hyperlink{class_manager}{00012}}\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ t,\ \textcolor{keywordtype}{int}\ size>\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_manager_a7a9d8cf3d1b5fd09b10b1a2b36f9b3d4}{Manager}}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00013}\doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{00013}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00014}\doxymbox{\hyperlink{class_manager_a172fcb465802aff188509ed8f0ce1a94}{00014}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_manager_a172fcb465802aff188509ed8f0ce1a94}{totalTime}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00015}\doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{00015}}\ \ \ \ \ list<vehicle<t>>\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00016}\doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{00016}}\ \ \ \ \ \doxymbox{\hyperlink{class_graph}{Graph<t,\ size>}}*\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00017}\doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{00017}}\ \ \ \ \ vector<float>\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00018}\doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{00018}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{minTravelTime}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00019}\doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{00019}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{maxTravelTime}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00020}\doxymbox{\hyperlink{class_manager_a99e814ca49a88675d715c451c22cc406}{00020}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_manager_a99e814ca49a88675d715c451c22cc406}{totalFreeFlowTime}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00021}\doxymbox{\hyperlink{class_manager_a443b0354b5254c7f1613b6bdf92e17ec}{00021}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_manager_a443b0354b5254c7f1613b6bdf92e17ec}{windowSize}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00023}00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00024}\doxymbox{\hyperlink{class_manager_a7a9d8cf3d1b5fd09b10b1a2b36f9b3d4}{00024}}\ \ \ \ \ \doxymbox{\hyperlink{class_manager_a7a9d8cf3d1b5fd09b10b1a2b36f9b3d4}{Manager}}(\doxymbox{\hyperlink{class_graph}{Graph<t,\ size>}}*\ m)\ :\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}(m)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a172fcb465802aff188509ed8f0ce1a94}{totalTime}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{minTravelTime}}\ =\ 999999.0f;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{maxTravelTime}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a99e814ca49a88675d715c451c22cc406}{totalFreeFlowTime}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a443b0354b5254c7f1613b6bdf92e17ec}{windowSize}}\ =\ 100;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00031}00031\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00032}\doxymbox{\hyperlink{class_manager_a50433214c0035b6145f9bfa863f8a95d}{00032}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_manager_a50433214c0035b6145f9bfa863f8a95d}{getVehicleCount}}()\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.size();\ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00033}\doxymbox{\hyperlink{class_manager_af9554320b5b6a5f6a194330a90e5def4}{00033}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_manager_af9554320b5b6a5f6a194330a90e5def4}{getArrivedCount}}()\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}};\ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00034}\doxymbox{\hyperlink{class_manager_aa096455f1fb6db1d64381ba40b1924b0}{00034}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_aa096455f1fb6db1d64381ba40b1924b0}{entrance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mov[size];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ mov[i]\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ list<vehicle<t>>::iterator\ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (car\ !=\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.end())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>state\ !=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>path.size()\ <\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ t\ u\ =\ car-\/>path.front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\_p\ =\ car-\/>path.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ advance(it\_p,\ 1);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ t\ v\ =\ *it\_p;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ index\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getIndex(u);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ road\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(u,\ v);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ discharge\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_a669dfcadc27d416b6511a92684442ef9}{DischargeAllowed}}(road.\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}},\ road.\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}});}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (road.\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}}\ \&\&\ mov[index]\ <\ discharge)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mov[index]++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>inQueue)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_afa8574d48d45a7bace5f79f51ce70a56}{vehicleExitsQueue}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>inQueue\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_ad2d8b3a44383c9950e6cc4b4606b9f1a}{vehicleEntersRoad}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>timeRemaining\ =\ road.\doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>current\ =\ u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>selected\_path.push\_back(u);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.first\ =\ u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second\ =\ v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!car-\/>inQueue)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_ab807ac493fcc667a2d6571906da7d106}{vehicleJoinsQueue}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>inQueue\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.first\ =\ u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second\ =\ v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00084}00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00087}\doxymbox{\hyperlink{class_manager_aef9be6b89ef65c0eadad234ef04e6109}{00087}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_aef9be6b89ef65c0eadad234ef04e6109}{entraingfromQueetoEdge}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00089}00089\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ list<vehicle<t>>::iterator\ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mov[size];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ mov[i]\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00093}00093\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00094}00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (car\ !=\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.end())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>path.size()\ <\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>state\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ u\ =\ car-\/>path.front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\_p\ =\ car-\/>path.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ advance(it\_p,\ 1);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ v\ =\ *it\_p;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ index\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getIndex(u);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ road\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(u,\ v);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ discharge\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_a669dfcadc27d416b6511a92684442ef9}{DischargeAllowed}}(road.\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}},\ road.\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}});}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (road.\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}}\ \&\&\ mov[index]\ <\ discharge)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mov[index]++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>inQueue)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_afa8574d48d45a7bace5f79f51ce70a56}{vehicleExitsQueue}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>inQueue\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_ad2d8b3a44383c9950e6cc4b4606b9f1a}{vehicleEntersRoad}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>timeRemaining\ =\ road.\doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>current\ =\ u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.first\ =\ u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>selected\_path.push\_back(u);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second\ =\ v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00126}00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00127}00127\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00129}\doxymbox{\hyperlink{class_manager_ad0225e9d82af0bbf8bff4fa02e32b064}{00129}}\ \ \ \ \ list<vehicle<t>>\&\ \doxymbox{\hyperlink{class_manager_ad0225e9d82af0bbf8bff4fa02e32b064}{getVehicles}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00130}00130\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00131}00131\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00133}\doxymbox{\hyperlink{class_manager_a353440025ca159bb34b3af7063376db8}{00133}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_a353440025ca159bb34b3af7063376db8}{recordArrival}}(\textcolor{keywordtype}{float}\ travelTime,\ \textcolor{keyword}{const}\ vector<t>\&\ selectedPath)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00134}00134\ \ \ \ \ \ \ \ \ this-\/>totalArrivedCount++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00135}00135\ \ \ \ \ \ \ \ \ this-\/>totalTime\ +=\ travelTime;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00137}00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (travelTime\ <\ \doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{minTravelTime}})}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{minTravelTime}}\ =\ travelTime;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00139}00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (travelTime\ >\ \doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{maxTravelTime}})}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{maxTravelTime}}\ =\ travelTime;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00142}00142\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.push\_back(travelTime);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\textcolor{keywordtype}{int})\doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size()\ >\ \doxymbox{\hyperlink{class_manager_a443b0354b5254c7f1613b6bdf92e17ec}{windowSize}})\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.erase(\doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.begin());}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00145}00145\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00147}00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ +\ 1\ <\ selectedPath.size();\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ rd\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(selectedPath[i],\ selectedPath[i\ +\ 1]);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a99e814ca49a88675d715c451c22cc406}{totalFreeFlowTime}}\ +=\ rd.\doxymbox{\hyperlink{struct_road_details_a3d1c2ac79846045deac57b0b89341471}{bestTime}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (...)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00155}00155\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00156}00156\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00158}\doxymbox{\hyperlink{class_manager_a66ab5b09246caed3e30768721639ee25}{00158}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_a66ab5b09246caed3e30768721639ee25}{reached}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00159}00159\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ list<vehicle<t>>::iterator\ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00160}00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (car\ !=\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.end())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ deleted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>state\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>selected\_path.push\_back(car-\/>current);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a353440025ca159bb34b3af7063376db8}{recordArrival}}(}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>timespent,}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>selected\_path);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.erase(car);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00168}00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ deleted\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00170}00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00171}00171\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00172}00172\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>state\ ==\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00174}00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>path.size()\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00176}00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>timeRemaining\ <=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ u\ =\ car-\/>path.front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00179}00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\_p\ =\ car-\/>path.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00180}00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ it\_p++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00181}00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ v\ =\ *it\_p;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00182}00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>selected\_path.push\_back(v);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00183}00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ r\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(u,\ v);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00184}00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ r.\doxymbox{\hyperlink{struct_road_details_abd834d75bb646b28fcbc9f079dfe6448}{vehicleExitsRoad}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00185}00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.first\ =\ t();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00186}00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second\ =\ t();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00187}00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>current\ =\ v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00188}00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>timeRemaining\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00189}00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ x\ =\ car-\/>getTakenPath();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ y\ =\ car-\/>getstart\_and\_end();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00191}00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_acc537b5360b5556da217c2a33775c373}{Car\_timing\_file}}(car-\/>timespent,\ car-\/>id,\ x,\ y);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00192}00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a353440025ca159bb34b3af7063376db8}{recordArrival}}(car-\/>timespent,\ car-\/>selected\_path);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00193}00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.erase(car);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00194}00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ deleted\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00195}00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00196}00196\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00197}00197\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00198}00198\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!deleted)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00199}00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00200}00200\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00201}00201\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00202}00202\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00204}\doxymbox{\hyperlink{class_manager_a9d7f391347995c2a77c126aa30827824}{00204}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_a9d7f391347995c2a77c126aa30827824}{ShortestPath}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00205}00205\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ list<vehicle<t>>::iterator\ temp\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00206}00206\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp\ !=\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.end())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00207}00207\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (temp-\/>state\ ==\ -\/1)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00208}00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00209}00209\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00210}00210\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (temp-\/>state\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00211}00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00212}00212\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00213}00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00214}00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list<t>\ newPath\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>shortest\_Path\_btw2\_vericex\_returing\_list(}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00215}00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>current,\ temp-\/>dest);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00216}00216\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00217}00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (temp-\/>state\ ==\ 0\ \&\&\ temp-\/>inQueue\ \&\&\ !newPath.empty()\ \&\&}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00218}00218\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ !temp-\/>path.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00219}00219\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00220}00220\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ oldU\ =\ temp-\/>path.front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00221}00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ oldIt\ =\ temp-\/>path.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00222}00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ advance(oldIt,\ 1);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00223}00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ newU\ =\ newPath.front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00224}00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ newIt\ =\ newPath.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00225}00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ advance(newIt,\ 1);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00226}00226\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00227}00227\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (temp-\/>path.size()\ >=\ 2\ \&\&\ newPath.size()\ >=\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00228}00228\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ oldV\ =\ *oldIt;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00229}00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ newV\ =\ *newIt;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00230}00230\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (oldU\ !=\ newU\ ||\ oldV\ !=\ newV)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00231}00231\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00232}00232\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00233}00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ oldRoad\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00234}00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>currentRoad.first,\ temp-\/>currentRoad.second);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00235}00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldRoad.\doxymbox{\hyperlink{struct_road_details_afa8574d48d45a7bace5f79f51ce70a56}{vehicleExitsQueue}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00236}00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00237}00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (...)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00238}00238\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00239}00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>inQueue\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00240}00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00241}00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00242}00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00243}00243\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00244}00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>path\ =\ newPath;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00245}00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00246}00246\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00247}00247\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00248}00248\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00249}00249\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00250}\doxymbox{\hyperlink{class_manager_aca5ea9096ff8a677c31f33f25cd9730a}{00250}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_aca5ea9096ff8a677c31f33f25cd9730a}{addVehicle}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ t\ source,\ t\ destination)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00251}00251\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structvehicle}{vehicle<t>}}\ newCar(\textcolor{keywordtype}{id},\ source,\ destination);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00252}00252\ \ \ \ \ \ \ \ \ newCar.\doxymbox{\hyperlink{structvehicle_ab17e4d14527176aa95d3ec534a38b044}{path}}\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00253}00253\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>shortest\_Path\_btw2\_vericex\_returing\_list(source,\ destination);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00254}00254\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.push\_back(newCar);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00255}00255\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00256}00256\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00257}\doxymbox{\hyperlink{class_manager_ac9e977b3769ef82a56fa87d08092decc}{00257}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_ac9e977b3769ef82a56fa87d08092decc}{arrivalAtIntersection}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00258}00258\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a9d7f391347995c2a77c126aa30827824}{ShortestPath}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00259}00259\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ list<vehicle<t>>::iterator\ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00260}00260\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mov[size];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00261}00261\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00262}00262\ \ \ \ \ \ \ \ \ \ \ \ \ mov[i]\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00263}00263\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00264}00264\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00265}00265\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (car\ !=\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.end())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>state\ ==\ 1\ \&\&\ car-\/>timeRemaining\ <=\ 0\ \&\&\ car-\/>path.size()\ >\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00267}00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ u\ =\ car-\/>path.front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00268}00268\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ index\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getIndex(u);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00269}00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ car-\/>path.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00270}00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ advance(it,\ 1);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ v\ =\ *it;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00272}00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ oldRoad\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(u,\ v);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00273}00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldRoad.\doxymbox{\hyperlink{struct_road_details_abd834d75bb646b28fcbc9f079dfe6448}{vehicleExitsRoad}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00274}00274\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>path.pop\_front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00275}00275\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>current\ =\ v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00276}00276\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00277}00277\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ next\_u\ =\ car-\/>path.front();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00278}00278\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it2\ =\ car-\/>path.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00279}00279\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ it2++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00280}00280\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t\ next\_v\ =\ *it2;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00281}00281\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ road\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(next\_u,\ next\_v);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00282}00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ discharge\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00283}00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_a669dfcadc27d416b6511a92684442ef9}{DischargeAllowed}}(road.\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}},\ road.\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}});}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00284}00284\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!road.\doxymbox{\hyperlink{struct_road_details_ac4ceb3cfc775c9687e645ea74ce68422}{signalState}})\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00285}00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_ab807ac493fcc667a2d6571906da7d106}{vehicleJoinsQueue}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00286}00286\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>inQueue\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00287}00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>current\ =\ v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00288}00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00289}00289\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.first\ =\ next\_u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00290}00290\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second\ =\ next\_v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00291}00291\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00292}00292\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00293}00293\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00294}00294\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (road.\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ <\ road.\doxymbox{\hyperlink{struct_road_details_a3076ebc01452a151be9c90713f6c53ca}{capacity}}\ \&\&\ mov[index]\ <\ discharge)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00295}00295\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mov[index]++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00296}00296\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_ad2d8b3a44383c9950e6cc4b4606b9f1a}{vehicleEntersRoad}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00297}00297\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>timeRemaining\ =\ road.\doxymbox{\hyperlink{struct_road_details_a915b2e8bea1bbe71934faeedf53a06fb}{NonIdealtime}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00298}00298\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00299}00299\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>selected\_path.push\_back(next\_u);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00300}00300\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.first\ =\ next\_u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00301}00301\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second\ =\ next\_v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00302}00302\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00303}00303\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00304}00304\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ road.\doxymbox{\hyperlink{struct_road_details_ab807ac493fcc667a2d6571906da7d106}{vehicleJoinsQueue}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00305}00305\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>inQueue\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00306}00306\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>current\ =\ v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00307}00307\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>state\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00308}00308\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.first\ =\ next\_u;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00309}00309\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second\ =\ next\_v;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00310}00310\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00311}00311\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00312}00312\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00313}00313\ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00314}00314\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00315}00315\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00316}00316\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00317}\doxymbox{\hyperlink{class_manager_a0491c679bd2da5b32514b462d89fd3f1}{00317}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_a0491c679bd2da5b32514b462d89fd3f1}{updateSignals}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00318}00318\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00319}00319\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00320}00320\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00321}00321\ \ \ \ \ \ \ \ \ \ \ \ \ list<RoadDetails*>\ edges;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00322}00322\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00323}00323\ \ \ \ \ \ \ \ \ \ \ \ \ edges\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdges(\doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getVertexAt(i),\ edges);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00324}00324\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (edges.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00325}00325\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00326}00326\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00327}00327\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}*\ currentGreen\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00328}00328\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}*\ worstCandidate\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00329}00329\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ max\ =\ -\/1.0f;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00330}00330\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ maxWaitingQueue\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00331}00331\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ list<RoadDetails*>::iterator\ temp\ =\ edges.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00332}00332\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp\ !=\ edges.end())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00333}00333\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00334}00334\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (*temp)-\/>light.Timer((*temp)-\/>signalState,\ 0.10f);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00335}00335\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00336}00336\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((*temp)-\/>signalState\ ==\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00337}00337\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentGreen\ =\ *temp;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00338}00338\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00339}00339\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00340}00340\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ totalCost\ =\ (*temp)-\/>choosing()\ +\ (*temp)-\/>light.starvationCost();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00341}00341\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00342}00342\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (totalCost\ >\ max)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00343}00343\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\ =\ totalCost;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00344}00344\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ worstCandidate\ =\ *temp;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00345}00345\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00346}00346\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((*temp)-\/>queueCount\ >\ maxWaitingQueue)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00347}00347\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ maxWaitingQueue\ =\ (*temp)-\/>queueCount;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00348}00348\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00349}00349\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00350}00350\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00351}00351\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00352}00352\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (worstCandidate\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00353}00353\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (currentGreen\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00354}00354\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ worstCandidate-\/>\doxymbox{\hyperlink{struct_road_details_a1993bf790dd380a04515c84a1aca70b1}{changeState}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00355}00355\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00356}00356\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (currentGreen\ !=\ worstCandidate)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00357}00357\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00358}00358\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (currentGreen-\/>\doxymbox{\hyperlink{struct_road_details_a8e4ddd12afbe13e87defe82d15e0f786}{currentVehicles}}\ ==\ 0\ ||}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00359}00359\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentGreen-\/>\doxymbox{\hyperlink{struct_road_details_a3b3116e23d7a49efd70e8053b05d6538}{light}}.\doxymbox{\hyperlink{struct_traffic_signal_a03987971e60235922ee4cc0641ede6db}{canSwitch}}(currentGreen-\/>\doxymbox{\hyperlink{struct_road_details_a58a5e26ebd12a00a1f341580f61b1d96}{queueCount}},}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00360}00360\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ maxWaitingQueue))\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00361}00361\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentGreen-\/>\doxymbox{\hyperlink{struct_road_details_ab94219e0def9f56b282f2c74eac2be56}{change\_to\_red}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00362}00362\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ worstCandidate-\/>\doxymbox{\hyperlink{struct_road_details_a1993bf790dd380a04515c84a1aca70b1}{changeState}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00363}00363\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00364}00364\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00365}00365\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00366}00366\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00367}00367\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00368}00368\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00369}\doxymbox{\hyperlink{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6}{00369}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6}{printPerformanceMetrics}}(\textcolor{keywordtype}{float}\ tickTime,\ \textcolor{keywordtype}{float}\ averageRush)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00370}00370\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00371}00371\ \ \ \ \ \ \ \ \ ofstream\ outfile(\textcolor{stringliteral}{"{}performance\_metrics.txt"{}},\ ios::app);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00372}00372\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (outfile.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00373}00373\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ PERFORMANCE\ METRICS\ REPORT\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00374}00374\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Tick:\ "{}}\ <<\ (int)tickTime}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00375}00375\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00376}00376\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00377}00377\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this-\/>totalArrivedCount\ >\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00378}00378\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ actualAvgTravelTime\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00379}00379\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (float)this-\/>totalTime\ /\ this-\/>totalArrivedCount;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00380}00380\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ throughput\ =\ (float)this-\/>totalArrivedCount\ /\ tickTime;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00381}00381\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00382}00382\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Total\ Vehicles\ Arrived:\ "{}}\ <<\ (int)\doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00383}00383\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Cumulative\ Avg\ Travel\ Time:\ "{}}\ <<\ actualAvgTravelTime}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00384}00384\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ ticks"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00385}00385\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00386}00386\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00387}00387\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00388}00388\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ windowSum\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00389}00389\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00390}00390\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ windowSum\ +=\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}[i];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00391}00391\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ windowedAvg\ =\ windowSum\ /\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00392}00392\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Windowed\ Avg\ Travel\ Time\ (last\ "{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00393}00393\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size()\ <<\ \textcolor{stringliteral}{"{}):\ "{}}\ <<\ windowedAvg}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00394}00394\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ ticks"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00395}00395\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00396}00396\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00397}00397\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00398}00398\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Min\ Travel\ Time:\ "{}}\ <<\ \doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{minTravelTime}}\ <<\ \textcolor{stringliteral}{"{}\ ticks"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00399}00399\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Max\ Travel\ Time:\ "{}}\ <<\ \doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{maxTravelTime}}\ <<\ \textcolor{stringliteral}{"{}\ ticks"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00400}00400\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size()\ >=\ 20)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00401}00401\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vector<float>\ sorted\ =\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00402}00402\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sort(sorted.begin(),\ sorted.end());}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00403}00403\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ p95idx\ =\ (int)(sorted.size()\ *\ 0.95);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00404}00404\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (p95idx\ >=\ (\textcolor{keywordtype}{int})sorted.size())}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00405}00405\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p95idx\ =\ (int)sorted.size()\ -\/\ 1;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00406}00406\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}P95\ Travel\ Time:\ "{}}\ <<\ sorted[p95idx]\ <<\ \textcolor{stringliteral}{"{}\ ticks"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00407}00407\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00408}00408\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00409}00409\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}System\ Throughput:\ "{}}\ <<\ throughput\ <<\ \textcolor{stringliteral}{"{}\ vehicles/tick"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00410}00410\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00411}00411\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00412}00412\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ totalDelay\ =\ this-\/>totalTime\ -\/\ this-\/>totalFreeFlowTime;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00413}00413\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Total\ Delay\ (actual\ -\/\ free\_flow):\ "{}}\ <<\ totalDelay}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00414}00414\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ ticks"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00415}00415\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00416}00416\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00417}00417\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}No\ vehicles\ have\ finished\ yet."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00418}00418\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00419}00419\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00420}00420\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Total\ System\ Cost:\ "{}}\ <<\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>total\_System\_Cost()\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00421}00421\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Average\ Rush\ Level:\ "{}}\ <<\ averageRush\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00422}00422\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Active\ Vehicles:\ "{}}\ <<\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.size()\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00423}00423\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00424}00424\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ roadSnap\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>printRoadSnapshot();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00425}00425\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!roadSnap.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00426}00426\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}Active\ Roads:"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00427}00427\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ roadSnap;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00428}00428\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00429}00429\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00430}00430\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00431}00431\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (averageRush\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00432}00432\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00433}00433\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00434}00434\ \ \ \ \ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ performance\_metrics.txt\ for\ writing."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00435}00435\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00436}00436\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00437}00437\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00438}00438\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00439}\doxymbox{\hyperlink{class_manager_ab17ffee5b62b18932efc27fffb4e26dc}{00439}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_ab17ffee5b62b18932efc27fffb4e26dc}{printCSVHeader}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00440}00440\ \ \ \ \ \ \ \ \ ofstream\ csv(\textcolor{stringliteral}{"{}metrics.csv"{}},\ ios::trunc);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00441}00441\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (csv.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00442}00442\ \ \ \ \ \ \ \ \ \ \ \ \ csv\ <<\ \textcolor{stringliteral}{"{}tick,arrived,cumulative\_avg,windowed\_avg,min\_time,max\_time,p95\_"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00443}00443\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}time,throughput,rush\_level,system\_cost,total\_delay,active\_"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00444}00444\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}vehicles"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00445}00445\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00446}00446\ \ \ \ \ \ \ \ \ \ \ \ \ csv.close();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00447}00447\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00448}00448\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00449}00449\ \ \ \ \ \textcolor{comment}{//\ do\ this\ again}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00450}\doxymbox{\hyperlink{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a}{00450}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a}{printCSVRow}}(\textcolor{keywordtype}{float}\ tickTime,\ \textcolor{keywordtype}{float}\ averageRush)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00451}00451\ \ \ \ \ \ \ \ \ ofstream\ csv(\textcolor{stringliteral}{"{}metrics.csv"{}},\ ios::app);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00452}00452\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (csv.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00453}00453\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ cumAvg\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00454}00454\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ >\ 0)\ ?\ \doxymbox{\hyperlink{class_manager_a172fcb465802aff188509ed8f0ce1a94}{totalTime}}\ /\ \doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ :\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00455}00455\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ windowedAvg\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00456}00456\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ p95\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00457}00457\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00458}00458\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ wsum\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00459}00459\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00460}00460\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ wsum\ +=\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}[i];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00461}00461\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ windowedAvg\ =\ wsum\ /\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00462}00462\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}}.size()\ >=\ 20)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00463}00463\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vector<float>\ sorted\ =\ \doxymbox{\hyperlink{class_manager_a947bfa28895dd730202f347bf8d7f2f4}{recentTravelTimes}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00464}00464\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sort(sorted.begin(),\ sorted.end());}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00465}00465\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ idx\ =\ (int)(sorted.size()\ *\ 0.95);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00466}00466\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (idx\ >=\ (\textcolor{keywordtype}{int})sorted.size())}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00467}00467\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ idx\ =\ (int)sorted.size()\ -\/\ 1;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00468}00468\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p95\ =\ sorted[idx];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00469}00469\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00470}00470\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00471}00471\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ throughput\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00472}00472\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ >\ 0)\ ?\ \doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ /\ tickTime\ :\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00473}00473\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ delay\ =\ \doxymbox{\hyperlink{class_manager_a172fcb465802aff188509ed8f0ce1a94}{totalTime}}\ -\/\ \doxymbox{\hyperlink{class_manager_a99e814ca49a88675d715c451c22cc406}{totalFreeFlowTime}};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00474}00474\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00475}00475\ \ \ \ \ \ \ \ \ \ \ \ \ csv\ <<\ (int)tickTime\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ (\textcolor{keywordtype}{int})\doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ cumAvg}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00476}00476\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ windowedAvg\ <<\ \textcolor{stringliteral}{"{},"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00477}00477\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ ((\doxymbox{\hyperlink{class_manager_a128c592de3c504d6951beb256c5e69c6}{totalArrivedCount}}\ >\ 0)\ ?\ \doxymbox{\hyperlink{class_manager_adc85677f7f86301a3ebcdc7d07440fc7}{minTravelTime}}\ :\ 0)\ <<\ \textcolor{stringliteral}{"{},"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00478}00478\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \doxymbox{\hyperlink{class_manager_a23894387d52d803518bbcb88a93078a3}{maxTravelTime}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ p95\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ throughput\ <<\ \textcolor{stringliteral}{"{},"{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00479}00479\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ averageRush\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>total\_System\_Cost()\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ delay}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00480}00480\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.size()\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00481}00481\ \ \ \ \ \ \ \ \ \ \ \ \ csv.close();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00482}00482\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00483}00483\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00484}00484\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00485}\doxymbox{\hyperlink{class_manager_acc537b5360b5556da217c2a33775c373}{00485}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_acc537b5360b5556da217c2a33775c373}{Car\_timing\_file}}(\textcolor{keywordtype}{float}\ time,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{string}\ path,}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00486}00486\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ initial\_and\_final)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00487}00487\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00488}00488\ \ \ \ \ \ \ \ \ ofstream\ outfile(\textcolor{stringliteral}{"{}car\_timings.txt"{}},\ ios::app);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00489}00489\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (outfile.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00490}00490\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ left\ <<\ setw(15)\ <<\ (\textcolor{stringliteral}{"{}Vehicle\ "{}}\ +\ to\_string(\textcolor{keywordtype}{id}))\ <<\ setw(25)}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00491}00491\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ (\textcolor{stringliteral}{"{}("{}}\ +\ initial\_and\_final\ +\ \textcolor{stringliteral}{"{})"{}})\ <<\ left\ <<\ setw(30)}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00492}00492\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ (\textcolor{stringliteral}{"{}arrived\ in\ "{}}\ +\ to\_string(time)\ +\ \textcolor{stringliteral}{"{}\ ticks."{}})}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00493}00493\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}Path:\ "{}}\ <<\ path\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00494}00494\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00495}00495\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00496}00496\ \ \ \ \ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ car\_timings.txt\ for\ writing."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00497}00497\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00498}00498\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00499}\doxymbox{\hyperlink{class_manager_af521d9ca788033a79123c004d51367e1}{00499}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_af521d9ca788033a79123c004d51367e1}{clearMetricsFile}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00500}00500\ \ \ \ \ \ \ \ \ ofstream\ outfile(\textcolor{stringliteral}{"{}performance\_metrics.txt"{}},\ ios::trunc);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00501}00501\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (outfile.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00502}00502\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ NEW\ SIMULATION\ SESSION\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00503}00503\ \ \ \ \ \ \ \ \ \ \ \ \ outfile.close();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00504}00504\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00505}00505\ \ \ \ \ \ \ \ \ ofstream\ outfile1(\textcolor{stringliteral}{"{}car\_timings.txt"{}},\ ios::trunc);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00506}00506\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (outfile1.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00507}00507\ \ \ \ \ \ \ \ \ \ \ \ \ outfile1\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ NEW\ SIMULATION\ SESSION\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00508}00508\ \ \ \ \ \ \ \ \ \ \ \ \ outfile1.close();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00509}00509\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00510}00510\ \ \ \ \ \ \ \ \ ofstream\ outfile2(\textcolor{stringliteral}{"{}map.txt"{}},\ ios::trunc);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00511}00511\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (outfile2.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00512}00512\ \ \ \ \ \ \ \ \ \ \ \ \ outfile2\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ NEW\ SIMULATION\ SESSION\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00513}00513\ \ \ \ \ \ \ \ \ \ \ \ \ outfile2.close();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00514}00514\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00515}00515\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_ab17ffee5b62b18932efc27fffb4e26dc}{printCSVHeader}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00516}00516\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00517}00517\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00518}\doxymbox{\hyperlink{class_manager_a31d4b22355ac9d9832909f0f4c3dc13e}{00518}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_a31d4b22355ac9d9832909f0f4c3dc13e}{printNetwork}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00519}00519\ \ \ \ \ \ \ \ \ ofstream\ outfile(\textcolor{stringliteral}{"{}map.txt"{}},\ ios::app);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00520}00520\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (outfile.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00521}00521\ \ \ \ \ \ \ \ \ \ \ \ \ outfile\ <<\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>printGrapgh();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00522}00522\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00523}00523\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00524}00524\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00525}\doxymbox{\hyperlink{class_manager_ace3f1bbef929aedde17485e74d63bb72}{00525}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_ace3f1bbef929aedde17485e74d63bb72}{PrintAllConnetedCityFromAcity}}()\ \{\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>PrintLevels();\ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00526}00526\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00527}\doxymbox{\hyperlink{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a}{00527}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a}{checkBrokenPath}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00528}00528\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ list<vehicle<t>>::iterator\ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.begin();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00529}00529\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (car\ !=\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.end())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00530}00530\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>path.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00531}00531\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00532}00532\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Removing\ Vehicle\ "{}}\ <<\ car-\/>id\ <<\ \textcolor{stringliteral}{"{}:\ No\ viable\ path\ to\ "{}}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00533}00533\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ car-\/>dest\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00534}00534\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>state\ ==\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00535}00535\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ d\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(car-\/>currentRoad.first,}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00536}00536\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00537}00537\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ d.\doxymbox{\hyperlink{struct_road_details_abd834d75bb646b28fcbc9f079dfe6448}{vehicleExitsRoad}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00538}00538\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00539}00539\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00540}00540\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car-\/>inQueue)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00541}00541\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00542}00542\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_road_details}{RoadDetails}}\&\ d\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>getEdgeDetails(car-\/>currentRoad.first,}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00543}00543\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>currentRoad.second);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00544}00544\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ d.\doxymbox{\hyperlink{struct_road_details_afa8574d48d45a7bace5f79f51ce70a56}{vehicleExitsQueue}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00545}00545\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00546}00546\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (...)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00547}00547\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00548}00548\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car-\/>inQueue\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00549}00549\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00550}00550\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car\ =\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.erase(car);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00551}00551\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00552}00552\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00553}00553\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00554}00554\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00555}00555\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00556}00556\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00557}00557\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00558}\doxymbox{\hyperlink{class_manager_a0170cc23a3a67917aed9e6f708830fe9}{00558}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_a0170cc23a3a67917aed9e6f708830fe9}{physics}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00559}00559\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00560}00560\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ total\_time\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00561}00561\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}time\ step\ =\ 6\ minutes\ ticks\ per\ loop"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00562}00562\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00563}00563\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}}.size()\ >\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00564}00564\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (total\_time\ \%\ 50\ ==\ 0\ \&\&\ total\_time\ <\ 4000)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00565}00565\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a336a1e9218b0d04d5f555851d123b352}{injectSinusoidalTraffic}}(total\_time);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00566}00566\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00567}00567\ \ \ \ \ \ \ \ \ \ \ \ \ total\_time++;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00568}00568\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a0491c679bd2da5b32514b462d89fd3f1}{updateSignals}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00569}00569\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00570}00570\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ car\ :\ \doxymbox{\hyperlink{class_manager_a55779dccb44a95388ec5310d33b92c67}{array\_of\_vehicles}})\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00571}00571\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car.state\ ==\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00572}00572\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car.timeRemaining\ -\/=\ 2.0f;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00573}00573\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car.timespent\ +=\ 2.0f;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00574}00574\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00575}00575\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (car.state\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00576}00576\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car.timespent\ +=\ 2.0f;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00577}00577\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00578}00578\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00579}00579\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (car.timeRemaining\ <\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00580}00580\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ car.timeRemaining\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00581}00581\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00582}00582\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00583}00583\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00584}00584\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (total\_time\ \%\ 100\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00585}00585\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6}{printPerformanceMetrics}}(total\_time,\ x);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00586}00586\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a}{printCSVRow}}(total\_time,\ x);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00587}00587\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00588}00588\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00589}00589\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a66ab5b09246caed3e30768721639ee25}{reached}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00590}00590\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_ac9e977b3769ef82a56fa87d08092decc}{arrivalAtIntersection}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00591}00591\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_aef9be6b89ef65c0eadad234ef04e6109}{entraingfromQueetoEdge}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00592}00592\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_aa096455f1fb6db1d64381ba40b1924b0}{entrance}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00593}00593\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_ae97e60d3e65539f3ec5fc92185cf7a6a}{checkBrokenPath}}();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00594}00594\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00595}00595\ \ \ \ \ \ \ \ \ \ \ \ \ x\ =\ \doxymbox{\hyperlink{class_manager_aeecc62d457b860cb37e2c195cf56e5c4}{map}}-\/>AverageRush();}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00596}00596\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00597}00597\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (total\_time\ >\ 7000)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00598}00598\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Simulation\ timed\ out\ after\ 7,000\ ticks."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00599}00599\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00600}00600\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00601}00601\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00602}00602\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00603}00603\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ FINAL\ SIMULATION\ REPORT\ -\/-\/-\/"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00604}00604\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_a6ef737e8ac55962fc35dfb1a69b237c6}{printPerformanceMetrics}}(total\_time,\ x);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00605}00605\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_afdaa8477c3bb7c6b48e00bb385f5172a}{printCSVRow}}(total\_time,\ x);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00606}00606\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}All\ reachable\ cars\ have\ reached\ their\ destinations."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00607}00607\ \ \ \ \ \ \ \ \ cout\ <<\ this-\/>array\_of\_vehicles.size()}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00608}00608\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ left\ in\ the\ system\ (unreachable\ or\ still\ en\ route)."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00609}00609\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00610}00610\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00611}\doxymbox{\hyperlink{class_manager_a336a1e9218b0d04d5f555851d123b352}{00611}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_manager_a336a1e9218b0d04d5f555851d123b352}{injectSinusoidalTraffic}}(\textcolor{keywordtype}{int}\ currentTime)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00612}00612\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ cities[]\ =\ \{\ \textcolor{stringliteral}{"{}Karachi"{}},\ \textcolor{stringliteral}{"{}Sukkur"{}},\ \textcolor{stringliteral}{"{}Quetta"{}},\ \ \ \textcolor{stringliteral}{"{}DG\ Khan"{}},}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00613}00613\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Multan"{}},\ \ \textcolor{stringliteral}{"{}Lahore"{}},\ \textcolor{stringliteral}{"{}Islamabad"{}}\ \};}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00614}00614\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ amplitude\ =\ 10.0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00615}00615\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ baseline\ =\ 5.0;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00616}00616\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ frequency\ =\ 0.01;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00617}00617\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ carsToAdd\ =}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00618}00618\ \ \ \ \ \ \ \ \ \ \ \ \ (int)(amplitude\ *\ (sin(frequency\ *\ currentTime)\ +\ 1)\ +\ baseline);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00619}00619\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ globalCarID\ =\ 1000;}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00620}00620\ }
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00621}00621\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ carsToAdd;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00622}00622\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ start\ =\ cities[rand()\ \%\ 4];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00623}00623\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ end\ =\ cities[4\ +\ (rand()\ \%\ 3)];}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00624}00624\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (start\ !=\ end)\ \{}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00625}00625\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_manager_aca5ea9096ff8a677c31f33f25cd9730a}{addVehicle}}(globalCarID++,\ start,\ end);}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00626}00626\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00627}00627\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00628}00628\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_manger_8h_source_l00629}00629\ \};}
+
+\end{DoxyCode}

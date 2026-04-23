@@ -1,0 +1,96 @@
+\doxysection{Simulator.\+h}
+\hypertarget{_simulator_8h_source}{}\label{_simulator_8h_source}\doxymbox{\hyperlink{_simulator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_manger_8h}{Manger.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00006}00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00008}\doxymbox{\hyperlink{class_simulator}{00008}}\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ t,\ \textcolor{keywordtype}{int}\ size>\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_simulator_abe30e5f678349eea778e0d815b7eaa62}{Simulator}}\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00009}\doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{00009}}\ \ \ \ \ \doxymbox{\hyperlink{class_graph}{Graph<t,\ size>}}*\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}};}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00011}00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00012}\doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{00012}}\ \ \ \ \ \doxymbox{\hyperlink{class_manager}{Manager<t,\ size>}}*\ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}};}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00013}\doxymbox{\hyperlink{class_simulator_abe30e5f678349eea778e0d815b7eaa62}{00013}}\ \ \ \ \ \doxymbox{\hyperlink{class_simulator_abe30e5f678349eea778e0d815b7eaa62}{Simulator}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_graph}{Graph<t,\ size>}}(\textcolor{keyword}{true});\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}}\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_manager}{Manager<t,\ size>}}(\doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00017}00017\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00018}\doxymbox{\hyperlink{class_simulator_a727f3c6a0966dfd2e90a357bef8923ff}{00018}}\ \ \ \ \ \doxymbox{\hyperlink{class_graph}{Graph<t,\ size>}}*\ \doxymbox{\hyperlink{class_simulator_a727f3c6a0966dfd2e90a357bef8923ff}{getMap}}()\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}};\ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00020}\doxymbox{\hyperlink{class_simulator_a3a5d14505bf355eba440349bab13348d}{00020}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_simulator_a3a5d14505bf355eba440349bab13348d}{setupNetwork}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}Karachi"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}Sukkur"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}Quetta"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}DG\ Khan"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}Multan"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}Lahore"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}Islamabad"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>insertVertex(\textcolor{stringliteral}{"{}Faisalabad"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ KHI\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}Karachi"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ SUK\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}Sukkur"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ QUE\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}Quetta"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ DGK\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}DG\ Khan"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ MUL\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}Multan"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ FSD\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}Faisalabad"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ LHR\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}Lahore"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ISB\ =\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>getIndex(\textcolor{stringliteral}{"{}Islamabad"{}});}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(KHI,\ SUK,\ 450,\ 130,\ 120,\ 0.1,\ 4.0);\ \textcolor{comment}{//\ M-\/9}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(SUK,\ MUL,\ 390,\ 120,\ 100,\ 0.1,\ 4.0);\ \textcolor{comment}{//\ M-\/5}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(MUL,\ FSD,\ 240,\ 120,\ 80,\ 0.1,\ 4.0);\ \textcolor{comment}{//\ M-\/4}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(FSD,\ ISB,\ 300,\ 120,\ 80,\ 0.1,\ 4.0);\ \textcolor{comment}{//\ M-\/2\ Bypass}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(FSD,\ LHR,\ 180,\ 110,\ 90,\ 0.1,\ 4.0);\ \textcolor{comment}{//\ FSD-\/LHR\ Link}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(LHR,\ ISB,\ 370,\ 120,\ 110,\ 0.1,\ 4.0);\ \textcolor{comment}{//\ Main\ M-\/2}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(QUE,\ DGK,\ 350,\ 80,\ 40,\ 0.2,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(DGK,\ FSD,\ 400,\ 100,\ 50,\ 0.2,\ 4.0);\ \textcolor{comment}{//\ Bypasses\ Multan\ entirely}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(SUK,\ DGK,\ 400,\ 90,\ 45,\ 0.2,\ 4.0);\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(QUE,\ ISB,\ 900,\ 110,\ 40,\ 0.1,\ 5.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(KHI,\ QUE,\ 680,\ 100,\ 35,\ 0.3,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(ISB,\ FSD,\ 300,\ 120,\ 70,\ 0.1,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(FSD,\ MUL,\ 240,\ 120,\ 70,\ 0.1,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(MUL,\ SUK,\ 390,\ 110,\ 80,\ 0.1,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(SUK,\ KHI,\ 450,\ 120,\ 100,\ 0.1,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(SUK,\ LHR,\ 600,\ 120,\ 80,\ 0.15,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(MUL,\ ISB,\ 500,\ 110,\ 70,\ 0.15,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(DGK,\ LHR,\ 550,\ 100,\ 60,\ 0.2,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>makeEdge(SUK,\ ISB,\ 800,\ 110,\ 80,\ 0.1,\ 4.0);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00058}\doxymbox{\hyperlink{class_simulator_a86a69c377e1d86f957751f076f870773}{00058}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_simulator_a86a69c377e1d86f957751f076f870773}{addMassiveTraffic}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ cities[]\ =\ \{\ \textcolor{stringliteral}{"{}Karachi"{}},\ \textcolor{stringliteral}{"{}Sukkur"{}},\ \textcolor{stringliteral}{"{}Quetta"{}},\ \ \ \textcolor{stringliteral}{"{}DG\ Khan"{}},}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Multan"{}},\ \ \textcolor{stringliteral}{"{}Lahore"{}},\ \textcolor{stringliteral}{"{}Islamabad"{}}\ \};}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ 150000;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ start\ =\ cities[i\ \%\ 4];}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ end\ =\ cities[4\ +\ (i\ \%\ 3)];}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (start\ !=\ end)\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}}-\/>addVehicle(i,\ start,\ end);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00070}00070\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}}-\/>printNetwork();}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00073}\doxymbox{\hyperlink{class_simulator_a750786921afa694ded3f53e9349cfef2}{00073}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_simulator_a750786921afa694ded3f53e9349cfef2}{run}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00074}00074\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ STARTING\ HEAVY\ TRAFFIC\ SIMULATION\ (3500\ VEHICLES)\ -\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}}-\/>physics();}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00078}\doxymbox{\hyperlink{class_simulator_a9df22c16559998d6cdec323dc86da867}{00078}}\ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a9df22c16559998d6cdec323dc86da867}{\string~Simulator}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}};}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00080}00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}};}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00081}00081\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00083}\doxymbox{\hyperlink{class_simulator_a9c750fdea1f896857a16725693941caf}{00083}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_simulator_a9c750fdea1f896857a16725693941caf}{metric}}(\textcolor{keywordtype}{int}\ total\_time,\ \textcolor{keywordtype}{int}\ x)\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00084}00084\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}}-\/>printCSVRow(total\_time,\ x);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00085}00085\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}}-\/>printPerformanceMetrics(total\_time,\ x);}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00087}\doxymbox{\hyperlink{class_simulator_ad0051ab2022596dd50f7a960af800453}{00087}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_simulator_ad0051ab2022596dd50f7a960af800453}{rush}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00088}00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_simulator_a2e55b3e2a9366c7434cc51d4e22f555e}{pakistanMap}}-\/>AverageRush();}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00089}00089\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00090}\doxymbox{\hyperlink{class_simulator_a0c77395e21ebfd639d84d0377c9d3a3d}{00090}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_simulator_a0c77395e21ebfd639d84d0377c9d3a3d}{clear}}()\ \{\ \doxymbox{\hyperlink{class_simulator_a2d91bdaf4a97ba2687c11eebc4eaa0a2}{cityManager}}-\/>clearMetricsFile();\ \}}
+\DoxyCodeLine{\Hypertarget{_simulator_8h_source_l00091}00091\ \};}
+
+\end{DoxyCode}

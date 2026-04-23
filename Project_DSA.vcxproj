@@ -127,14 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="Manger.cpp" />
     <ClCompile Include="Project_DSA.cpp" />
+    <ClCompile Include="RoadDetails.cpp" />
+    <ClCompile Include="Simulator.cpp" />
+    <ClCompile Include="TrafficSignal.cpp" />
+    <ClCompile Include="vehicle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Graph.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Manger.h" />
+    <ClInclude Include="RoadDetails.h" />
+    <ClInclude Include="Simulator.h" />
+    <ClInclude Include="TrafficSignal.h" />
+    <ClInclude Include="vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
