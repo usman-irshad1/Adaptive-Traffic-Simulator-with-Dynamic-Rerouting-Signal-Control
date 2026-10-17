@@ -1,7 +1,7 @@
 # Adaptive Traffic Flow Optimization System (`v1.0` — C++ / Raylib)
 
-[![Language: C++17](https://img.shields.io/badge/Language-C%2B%2B17-blue?style=flat-square)]()
-[![Graphics: Raylib 5.5](https://img.shields.io/badge/Graphics-Raylib%205.5-red?style=flat-square)]()
+![Language: C++17](https://img.shields.io/badge/Language-C%2B%2B17-blue?style=flat-square)
+![Graphics: Raylib 5.5](https://img.shields.io/badge/Graphics-Raylib%205.5-red?style=flat-square)
 [![Docs: Doxygen](https://img.shields.io/badge/Docs-Doxygen%20Live-2ea44f?style=flat-square)](https://usman-irshad1.github.io/Adaptive-Traffic-Simulator-with-Dynamic-Rerouting-Signal-Control/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
