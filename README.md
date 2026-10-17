@@ -120,3 +120,8 @@ In a high-density simulation with 30 vehicles:
 * Peak Congestion Level: 7.9% saturation
 * Success Rate: 100% (no deadlocks, all vehicles reached destination)
 
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
